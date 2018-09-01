@@ -1,0 +1,353 @@
+1. want
+
+	001|I wanna ~ .				| ~하고 싶어  											| I wanna see you. | I wanna see the video clip. | I wanna meet him tonight. | I wanna go to the party. | I wanna try something new.
+	002|I don't wanna ~ .		| ~하고 싶지 않아 / ~하는 건 싫어 						| I don't wanna talk to her. | I don't wanna work for him. | I don't wanna go out with him. | I don't wanna go there by myself.
+	003|I just wanted to ~ .	| 난 그냥 ~하고 싶었어 / 단지 ~하고 싶었을 뿐이야 		| I just wanted to see you. | I just wanted to say thank you. | I just wanted to ask you something. | I just wanted to be somebody.
+	004|I never wanted to ~ .	| 난 ~하고 싶은 게 아니었어 / 난 ~하고 싶었던 적 없어 	| I never wanted to hurt you. | I naver wanted to offend you. | I naver wanted to let you down. | I naver wanted to leave him.
+	005|You wanna ~ ?			| 너 ~하고 싶어? / ~할래? 								| You wanna go to the movies? | You wanna hit the movies today? | You wanna talk about it? | You wanna bet? | You wanna transfer to another school?
+	006|You wanted me to ~ .	| 네가 나더러 ~하랬잖아 / 저한테 ~하라고 하셨는데요 	| You wanted me to come here. | You wanted me to text you tonight. | You wanted me to talk to him for you. | You wanted me to take the day off. | You wanted me to finish this by tomorrow.
+	007|You might wanna ~ .		| ~하는 게 좋을 것 같은데 								| You might wanna listen to me. | You might wanna think again. | You might wanna retake this course. | You might wanna watch out. | You might wanna listen to her advice.
+	008|All I want ~ .			| 내가 원하는 건 ~뿐이야 / 난 ~을 원할 뿐이야 			| All I want is you. | All I want is some alone time. | All I want is your honesty. | All I want is to be happy.
+
+2. get
+
+	009|I got ~ .				| 나한테 ~가 있어 								| I got a great idea.
+	010|I gotta ~ .				| 나 ~ 해야 돼 / 나 ~해야겠다 					| I gotta go.
+	011|You gotta ~ .			| 너 ~해야 돼 									| You gotta try harder.
+	012|You're getting ~ .		| 너 (점점) ~해지고 있어 						| You're getting thinner.
+	013|I'll go get ~ .			| 내가 ~ 가지고 올게 / 나 ~하러 갈게 			| I'll go get some beer.
+	014|I don't get ~ .			| ~이 이해 안 돼								| I don't get him.
+	015|I got you ~ .			| 너 주려고 ~ 샀어 								| I got you something new.
+	016|Do you ever get the feeling (that) ~ ?	| ~이라는 느낌이 든 적 있어?	| Do you ever get the feeling that life is unfair?
+
+3. gonna
+
+	017|I'm gonna ~ .			| 난 ~할 거야 | I'm gonna stay out tonight.
+	018|I'm never gonna ~ .		| 나 절대 ~ 안 할 거야 / 못할 거야 | I'm never gonna leave you.
+	019|I think I'm gonna ~ .	| 나 ~할 것 같아 / 나 ~할까 해 | I think I'm gonna puke.
+	020|You're not gonna ~ .	| 넌 ~하지 않을 거야 / 네가 ~할 리가 없어 | You're not gonna regret this.
+	021|You really gonna ~ ?	| 너 정말 ~할 거야? | You really gonna forgive her?
+	022|You're gonna wanna ~ .	| 넌 ~하고 싶어질걸/~하는 게 좋을걸 | You're gonna wanna watch this.
+	023|There's gonna be ~ .	| ~이 있게 될 거야 | There's gonna be a lot of people.
+	024|What am I gonna ~ ?		| 나 뭘 ~하지? | What am I gonna say?
+
+4. have
+
+	025|I have some ~ .					| 나한테 ~이 약간 있어 | I have some change in my pocket.
+	026|I have nothing to ~ .			| 난 ~할 게 아무것도 없어 | I have nothing to say.
+	027|I have nothing to do with ~ .	| 난 ~과 아무 관련 없어 | I have nothing to do with it.
+	028|I didn't have ~ .				| 나에겐 ~이 없었어 | I didn't have any choice.
+	029|You have no idea ~ .			| 넌 ~을 전혀 몰라 | You have no idea what I want.
+	030|Do you have any idea ~ ? 		| 너 ~ 알아? | Do you have any idea what time it is?
+
+5. have to
+
+	031|I have to ~ .				| 난 ~해야 돼 | I have to be there by 5.
+	032|I don't have to ~ .			| 난 ~할 필요 없어 / ~할 생각 없어 | I don't have to do what she says.
+	033|I'm gonna have to ~ .		| 난 해야 할 거야 / 나 ~해야겠어 | I'm gonna have to call you back later.
+	034|You're gonna have to ~ .	| 너 ~해야 할 거야 / 너 ~해야겠어 | You're gonna have to face the truth.
+	035|Do I really have to ~ ?		| 나 꼭 ~해야 돼? | Do I really have to work today?
+	036|Do you have to ~ ?			| 너 ~해야 돼? / 꼭 ~해야겠냐? | Do you have to quit your job?
+	037|All you have to do is ~ .	| 네가 해야 하는 건 ~뿐이야 / 넌 ~만 하면 돼 | All you have to do is trust me.
+
+6. think
+
+	038|I think (that) ~ .				| ~할 / 인 것 같아 | I think that you're overreacting.
+	039|I've been thinking about ~ .	| 난 ~에 대해 계속 생각하고 있었어 / 생각해 보는 중이야 | I've been thinking about you.
+	040|I don't think (that) ~ .		| 난 ~ 못할 것 같아 / ~인 것 같지 않아 | I don't think that I love her anymore.
+	041|I don't think (that) I can ~ .	| 나 ~ 못할 것 같아 | I don't think that I can take it anymore.
+	042|What do you think (that) ~ ?	| 넌 ~이 뭐라고 생각해? | What do you think that it means?
+	043|You think (that) ~ ?			| 넌 ~인 것 같아? / 넌 ~이라고 생각한단 말이야? | You think that he's lying?
+
+7. know
+
+	044|I know you ~ .			| 난 네가 ~이라는 걸 알고 있어 / 난 ~을 다 알아 | I know you're in love.
+	045|I don't know if ~ .		| ~인지 모르겠어 | I don't know if I should believe you.
+	046|I don't know (WH) ~ .	| 무엇을 / 언제 / 어떻게 / 어디에서 / 왜 ~을 모르겠어 | I don't know when I'll be home.
+	047|I know ~ , but ~ .		| ~이라는 거 알지만 / 아는데…… | I know you're busy, but can I talk to you for a second?
+	048|All I know is ~ .		| 내가 아는 건 ~뿐이야 | All I know is he's not a quitter.
+	049|You know what ~ ?		| ~이 뭔지 알아? | You know what I don't get?
+	050|You don't even know ~ .	| 넌 ~도 모르잖아 | You don't even know what love is!
+	051|You never know when ~ .	| 언제 ~일지는 모르는 거잖아 | You never know when things will turn up.
+
+8. say
+
+	052|I have to say ~ .		| 정말이지, ~ | I have to say I'm shocked.
+	053|I say ~ .				| 내가 한마디하건데 ~ / 내 생각에는 ~ | I say we should help him.
+	054|They say ~ .			| ~이라고들 하지 / 원래 ~한 거잖아 | They say ignorance is bliss.
+	055|Let's say ~ .			| ~이라고 치자 / ~이라고 가정해 보자 | Let's say you're right.
+	056|Let's just say ~ .		| ~이라고만 말해 두지 | Let's just say he and I are through.
+	057|It's like saying ~ .	| 그건 ~이라고 말하는 거나 마찬가지야 | It's like saying it's okay to steal.
+	058|She was like, ~ 		| 이라고 말했지 / 생각했지 | She was like, "Eww! what is this?"
+
+9. tell/talk
+
+	059|I told you to ~ .			| 내가 너한테 ~하라고 했잖아 | I told you to drop the subject.
+	060|I told you not to ~ .		| 너한테 ~하지 말라고 했잖아 | I told you not to say anything.
+	061|Please tell me ~ .			| ~이라고 말해 줘 | Please tell me you've got good news.
+	062|You're telling me (that) ~ ?| 너 지금 ~이라는 거야? | You're telling me that it's all my fault?
+	063|I can tell ~ .				| 난 ~을 알 수 있어 | I can tell you're lying.
+	064|(S) talk about how ~ .		| ~이라고 하더라 | You always talk about how you're going to change.
+
+10. need
+
+	065|I just need to ~ .		| 난 (단지) ~해야 돼 / ~(만) 하면 돼 | I just need to take a shower.
+	066|We'll need to ~ .		| 우리 ~해야 할 거야 | We'll need to work faster.
+	067|I don't need to ~ .		| 난 ~하지 않아도 돼 / 내가 ~할 필요[이유]는 없어 | I don't need to apologize to you.
+	068|You don't need to ~ .	| 넌 ~하지 않아도 돼 | You don't need to say worry.
+	069|I need you to ~ .		| ~좀 해 줘 | I need you to keep it down a little.
+	070|All I need is ~ .		| 내가 필요한 건 ~이야 / 난 ~만 있으면 돼 | All I need is you.
+
+11. feel/see/sound
+
+	071|I feel like (N).			| ~을 하고 싶어 / ~할 기분이 나 | I feel like a cold beer.
+	072|I feel like (S) (V).		| ~하다는 생각이 들어 / ~같은 기분이야 | I feel like I'm left out.
+	073|I feel bad about/that ~ .	| ~ 때문에 속상해 / ~ 때문에 기분이 안 좋아 | I feel bad about what I said to Sarah.
+	074|Feel free to ~ .			| 얼마든지 ~해 / 언제든지 ~하세요 | Feel free to contact me at this number.
+	075|I don't see any ~ .			| 아무 ~도 안 보이는데 | I don't see anyone around here.
+	076|I see (WH) ~ .				| ~인지 알겠어 | I see what you mean.
+	077|Sounds like ~ .				| 들어 보니 ~인 것 같네 | Sounds like fun.
+
+12. I'm
+
+	078|I'm into ~ .					| 나 ~ 좋아해 / 나 ~에 관심 있어 | I'm into fashion.
+	079|I'm good with ~ .				| 난 ~ 잘 다뤄 | I'm good with children.
+	080|I'm totally ~ .					| 나 완전 ~해 / 이야 | I'm totally confused.
+	081|I'm not big on ~ .				| 난 ~ 별로야 | I'm not big on talking about myself.
+	082|I'm in the middle of ~ .		| 난 한창 ~ 중이야 | I'm in the middle of a date.
+	083|I'm not in the mood for/to ~ .	| 난 ~할 기분이 아니야 / ~이 안 내켜 | I'm not in the mood to talk now.
+	084|I'm just asking you to ~ .		| 난 (단지) ~해 달라고 하는 거야 | I'm just asking you to act your age.
+
+13. You're
+
+	085|You're so ~ .				| 너 정말 ~하다 | You're so selfish.
+	086|You're not that ~ .			| 너 그렇게 ~ 하지 않아 / ~하지 않거든 | You're not that fat.
+	087|You're better off ~ .		| 넌 ~하는 게 나아 / ~하는 편이 나아 | You're better off without him.
+	088|Are you saying (that) ~ ?	| 너 지금 ~이라고 말하는 거야? | Are you saying that I should lie?
+	089|You're (not) ~ing ~ .		| ~해 / ~하지 마 | You're not going anywhere.
+	090|You're the one who ~ .		| ~한 건 너잖아 | You're the one who brought it up.
+	091|What the hell are you ~ ?	| 너 도대체 뭐 ~하는 거야? | What the hell are you doing?
+
+14. That's/It's
+
+	092|That's exactly what ~ .				| 그게 바로 ~이야 / ~가 바로 그거야 		| That's exactly what I don't get.
+	093|That's what I like/love about ~ .	| 그래서 내가 ~을 좋아하는 / 사랑하는 거야 	| That's what I like about you.
+	094|Is that what ~ ?					| 그게 ~인 거야? 							| Is that what he said?
+	095|That's all I ~ .					| 내가 ~하는 건 그게 다야 / 난 그것만 ~해 	| That's all I ever wanted.
+	096|That's not why ~ .					| 그래서 ~한 게 아니야 						| That's not why I did it.
+	097|It's like ~ .						| (마치) ~인 것 같아 / ~ 같은 거네 			| It's like a dream come true.
+	098|It's not like ~ .					| ~인 것도 아니잖아 / ~인 건 아니야 		| It's not like you did nothing wrong.
+	099|It's just (that) ~ .				| 그게 말이야, ~ 							| It's just that I don't wanna go. That's all.
+	100|Maybe it was ~ .					| ~때문이었는지도 몰라 / 모르지 			| Maybe it was my jokes.
+
+15. There's
+
+	101|There's something ~ .		| ~한 / 할 게 있어 							| There's something I need to tell you. | There's something you need to understand. | There's something weird about him. | There's something different about you.
+	102|There's nothing like ~ .	| ~만한 건 없어 / ~이 최고야 				| There's nothing like a white Christmas. | There's nothing like some candles to set the mood. | There's nothing like computer games to kill time. | There's nothing like a cold beer after a hard day's work.
+	103|There's a chance (that) ~ .	| ~할 가능성이 있어 / ~할 수도 있어 		| There's a chance that he's still alive. | There's still a chance he might show up. | There's a chance he might back out at the last minute. | There's a good chance I won't be home today.
+	104|There's no way (that) ~ .	| ~일 리가 없어 							| There's no way that that's a picture of me. | There's no way he's that stupid. | There's no way he passed when I didn't. | There's no way she's a full-time mom with that body.	
+	105|There's a reason ~ .		| ~하는 데에는 이유가 있어 / 괜히 ~이 아니야| There's a reason I came to talk to you. | There's a reason for everything. | There's no reason to feel quilty. | There's a reason I haven't been around for a while.
+	106|There's nothing I can ~ .	| 내가 ~할 수 있는 건 없어 					| There's nothing I can do about it. | There's nothing I can tell you. | There's nothing more I can do at this point. | There's nothing I can say to change his mind.
+	107|There's no such thing as ~ .| ~같은 건 없어 / ~이라는 건 없어 			| There's no such thing as bad luck. | There's no such thing as coincidence. | There's no such thing as having it all. | There's no such thing as bad publicity.
+
+16. don't/didn't
+
+	108|You don't wanna ~ .		| ~하지 않는 게 좋을 거야 | You don't wanna watch this.
+	109|Don't even ~ .			| ~하지도 마 / ~할 꿈도 꾸지 마 | Don't even think about it.
+	110|Don't bother ~ .		| ~할 거 없어 / ~에 신경 쓰지 마 | Don't bother making me coffee. I'm heading out.
+	111|Don't you dare ~ !		| 감히 ~하기만 해봐라! / 감히 ~하지 마! | Don't you dare tell her!
+	112|Didn't (S) (V) ?		| ~하지 않았어? / 않았던가? | Didn't you tell him we're meeting at 4?
+	113|Didn't think (that) ~ .	| ~할 / 일 거라고는 생각 못했어 | Didn't think that you would be in today.
+
+17. can/can't
+
+	114|Can you get me ~ ?				| ~좀 갖다 / 사다 줄 수 있겠어? | Can you get me a cup of coffee?
+	115|Can you believe (that) ~ ?		| ~이 믿겨져? | Can you believe that I found this on the street?
+	116|I can't believe (that) ~ .		| ~이 안 믿어져 | I can't believe that he made the whole story up.
+	117|You can't just ~ .				| 그냥 ~하면 안 돼 / 그냥 ~하면 어떡해 | You can't just ask questions like that.
+	118|Why can't you ~ ?				| 넌 왜 ~하면 안 돼? / 왜 ~을 못하겠다는 거야? | Why can't you believe me?
+	119|Why can't we ~ ?				| 우리 왜 ~하면 안 되는 거야? | Why can't we stay friends?
+	120|The least you could do is ~ .	| 최소한 ~정도는 해 줄 수 있잖아 | The least you could do is phone me.
+
+18. have P.P.
+
+	121|I've never (P.P) ~ .		| 난 ~해 본 적 없어 | I've never been in love.
+	122|You've (P.P) ~ .			| 넌 ~해 봤잖아 / 왔잖아 | You've seen how far he can go.
+	123|I've been ~ing ~ .			| 난 ~해 / 하고 있어 | I've been dieting for three months.
+	124|Haven't you (P.P) ~ ?		| 너 ~해 본 적 없어? / ~안 했어? | Haven't you figured out the answer yet?
+	125|What have you (P.P) ~ ?		| 너 뭐 ~했어? | What have you been up to?
+	126|It's been ~ ( Since ~ ) .	| (~한 지) …나 됐어 | It's been 3 hours already! Where the hell is David?
+	127|You've been ~ing ~ ?		| 너 계속 ~했단 말이야? | You've been sleeping all day long?
+
+19. what
+
+	128|What's so ~ ?					| 뭐가 그렇게 ~해? | What's so funny?
+	129|What's with ~ ?					| ~가 왜 그러지? / 웬 ~이야? | What's with your hair?
+	130|What's it like ~ ?				| ~은 어떤 기분이야? / ~하니까 어때? | What's it like to be married?
+	131|What makes you think (that) ~ ?	| 뭐 때문에 ~이라고 생각하는 거야? | What makes you think we're gonna break up?
+	132|What did you do with/to ~ ?		| ~ 갖고 뭘 한 거야? / ~한테 무슨 짓을 한 거야? | What did you do with the money?
+	133|What matters is ~ .				| 중요한 건 ~이야 | What matters is we're together.
+	134|What do you mean ~ ?			| ~이라니 그게 무슨 말이야? | What do you mean he left?
+	135|What kind of ~ are you?			| 넌 무슨 ~이 그래? | What kind of friend are you?
+
+20. how
+
+	136|How could ~ ?					| 어떻게 ~할 수가 있어? | How could you talk behind my back?
+	137|How're you gonna ~ ?			| 너 어떻게 ~할 건데? | How're you gonna do that?
+	138|How about (S) (V) ~ ?			| ~하는 게 어때? / ~하면 어때? | How about you mind your own business?
+	139|How did you ~ ?					| 너 어떻게 ~했어? | How did you get in here?
+	140|How long have you (P.P) ~ ?		| ~한 지 얼마나 됐어? | How long have you been here?
+	141|How many times do I have to ~ ?	| 내가 (도대체) 몇 번 ~해야 되겠어? | How many times do I have to tell you?
+	142|How is it (that) ~ ?			| 어째서 ~이라는 거야? | How is it you weren't home for days?
+	143|How dare you ~ !				| 네가 감히 어떻게 ~해! / 감히 ~하다니! | How dare you call me an idiot!
+
+21. why/who
+
+	144|Why did I ~ ?			| 내가 왜 ~했지? | Why did I even listen to you?
+	145|Why do you wanna ~ ?	| 넌 왜 ~하고 싶은 거야? | Why do you wanna work here?
+	146|Why would (S) (V) ~ .	| 왜 ~하겠어? / 왜 ~하는 거야? | Why would I do that? I'm not stupid.
+	147|Why do I have to ~ ?	| 내가 왜 ~해야 하는 거야? | Why do I have to apologize to you?
+	148|Who's gonna ~ ?			| 누가 ~할 거야? / 누가 ~하겠냐? | Who's gonna help me with this?
+	149|Who said ~ ?			| 누가 ~래? | Who said so?
+	150|Who do you think ~ ?	| 누가 ~이라고 생각하니? / 누가 ~한 것 같아? | Who do you think is to blame?
+
+22. when/where
+
+	151|When was the last time you ~ ?	| 마지막으로 ~한 게 언제야? | When was the last time you saw her?
+	152|When are you gonna ~ ?			| 너 언제 ~할 거야? | When are you gonna return my camcorder?
+	153|Since when do you ~ ?			| 네가 언제부터 ~했다고 그래? | Since when do you believe in jinxes?
+	154|Where did you ~ ?				| 너 어디서 ~했어? | Where did you learn that?
+
+23. should/could/might
+
+	155|(S) should be ~ .		| ~할 거야 / ~일 거야 / ~해야 하는데 | That should be enough.
+	156|Maybe you should ~ .	| ~하는 게 좋을지도 모르겠어 / ~하는 게 좋을 것 같아 | Maybe you should go easy on her.
+	157|Shouldn't you be ~ ?	| 너 ~해야 되는 거 아니야? | Shouldn't you be in class at this hour?
+	158|I should've (P.P) ~ .	| ~해야 했는데 / ~할걸 | I should've given it more thought.
+	159|You should've (P.P) ~ .	| 넌 ~해야 했어 | You should've been more careful.
+	160|You could've (P.P) ~ .	| 네가 ~할 수도 있었잖아 | You could've at least called me.
+	161|(S) might've (P.P) ~ .	| 했을지도 몰라 / ~했었나 봐 | I might've forgotten it at home.
+
+24. guess/suppose
+
+	162|I guess ~ .					| ~인 것 같아 / ~이겠지, 뭐 | I guess you're right.
+	163|Guess (WH) ~ .				| ~인지 알아? / ~인지 맞춰 봐 | Guess what I just heard.
+	164|You're supposed to ~ .		| ~해야 하는 거잖아 / ~하기로 되어 있잖아 | You're supposed to finish it today.
+	165|You were supposed to ~ .	| 네가 ~하기로 되어 있었잖아 / 네가 ~한다고 그랬잖아 | You were supposed to bring it.
+	166|What am I supposed to ~ ?	| 내가 뭘 ~해야 하는 거야? | What am I supposed to say to him?
+	167|How am I supposed to ~ ?	| 내가 어떻게 ~해? / 나더러 어떻게 ~하라는 거야? | How am I supposed to know?
+	168|Suppose (that) ~ .			| ~이라고 가정해 보자 | Suppose you're right.
+
+25. thing
+
+	169|The thing is ~ .					| 문제는 ~ / 실은 ~ / 저기 ~ | The thing is I can't afford it.
+	170|~ is/are not my thing.				| ~은 내 취향이 아니야 / ~은 나하고 안 맞아 / 난 ~은 잘 못해 | Pretty boys are not my thing.
+	171|The last thing I want/need is ~ .	| 내가 가장 원하지 /필요하지 않는 건 ~이야 / 난 정말로 ~하고 싶지 않아 | The last thing I want to do is drink.
+	172|Good thing (that) ~ .				| ~이라서 다행이야 / ~하길 잘했다 | Good thing I brought an umbrella.
+	173|For one thing, ~ .					| 우선 첫째로, ~ | For one thing, I have a lot of work to do.
+
+26. sure
+
+	174|I'm pretty sure that/about ~ .		| 아마 ~일 거야 / 분명 ~ 일텐데 | I'm pretty sure they're having an affair.
+	175|You're sure (that)?					| ~이라는 거 확실해? | You're sure we can work this out?
+	176|(S) sure (V) ~ .					| 참 ~ 하구나 | You sure look good.
+	177|I'm not sure ~ .					| ~인지 잘 모르겠어 | I'm not sure if you've thought this through.
+	178|Sure/Of course (S) (V) ~ .			| 당연히 ~이지 | Sure I love you, honey.
+	179|~, that's for sure.					| 그건 확실해 	| He didn't look too happy, that's for sure.
+
+27. if
+
+	180|What if ~ ?				| 만약 ~하면 어쩌지? / 어쩔 건데? | What if it was my fault?
+	181|I'd ~ if I were you.	| 내가 너라면 ~할걸 | I'd back down if I were you.
+	182|I'll ~ if I have to.	| 필요하다면 ~할 거야 / ~이라도 할 거야 | I'll stay up all night to finish if I have to.
+	183|~ if you ask me.		| 내 생각으론 말이야, ~ / 내가 보기엔 말이지, ~ | It was a lie if you ask me.
+
+28. sorry/thank
+
+	184|I feel sorry for ~ .				| ~가 안됐어 / 불쌍해 | I feel sorry for Jen. Her mom passed away.
+	185|I'm sorry, but ~ .					| 미안하지만 ~ / 실례지만 ~ | I'm sorry, but I'm behind in my work.
+	186|(I'm) Sorry if I ~ .				| 내가 ~했다면 미안해  | Sorry if I offended you.
+	187|I (just) wanted to thank you for ~ .| ~에 대해 고맙다는 말을 하고 싶었어 | I just wanted to thank you for being nice to me.
+
+29. Pattern I
+
+	188|We should ~ .			| 우리 꼭 ~해야겠다 / 우리 ~하자 		| We should come here again sometime next week.
+	189|What kind of ~ ?		| 도대체 ~이 뭐 이래? / 어떤 ~이 …해? 	| What kind of question is that?
+	190|Care to ~ ?				| ~하고 싶어? / ~할래?/ ~할 생각 있어?	| Care to join us?
+	191|I bet (that) ~ .		| 분명히 ~이야 							| I bet that your parents will be proud of you.
+	192|Looks like ~ .			| ~같아 보이네 / 보니까 ~인 것 같아 	| Looks like skinny jeans are in again this year.
+	193|Turns out (that) ~ .	| 알고 보니 ~이더라고 					| Turns out he's actually a nice guy.
+
+30. Pattern II
+
+	194|Rumor has it (that) ~ .			| 소문에 의하면 ~이래 / ~이라는 소문이 있던데 				| Rumor has it they're getting married.
+	195|You of all people ~ .			| 다른 사람도 아니고 네가~ / 다른 사람이면 몰라도 너는~ 	| You of all people should know the fact.
+	196|Like ~ .						| ~일 리가 없지 / 퍽도 ~ 하겠다 / ~하는 것도 아니면서 무슨	| Like I'm gonna believe you.
+	197|Now that ~ .					| 이제 ~하니까 												| Now that you're with me, I feel much better.
+	198|No offense, but ~ .				| 불쾌하게 하려는 건 아니지만 ~ / 이런 말하기 뭐하지만 ~ 	| No offense, but you don't know me. (don't <- barely)
+	199|I take it (that) ~ .			| ~인가 보네 / ~인 것 같네 									| I take it you didn't sleep well last night.
+	200|Just because ~ doesn't mean ~ .	| ~이라고 해서 …인 건 아니잖아 								| Just because I'm alone doesn't mean I'm lonely.
+
+
+
+
+
+
+
+
+
+
+------------------------------------------------------------------
+say / tell
+say는 절대 사람을 목적어로 취하지 않는다.
+say something(무엇이라고 (말)하다)이라고 하거나 say something to somebody(누구에게 무엇이라고 (말)하다)와 같이만 쓴다.
+say는 흔히 누구의 말을 정확히 그대로 옮길 때 쓴다:‘Sit down’, she said.
+"앉으세요." 그녀가 말했다.
+Anne said, ‘I’m tired.’
+앤이 "난 피곤해"라고 말했다.
+Anne said (that) she was tired.
+앤은 피곤하다고 했다.
+What did he say to you?
+그가 너한테 뭐라고 그랬니?
+‘say about’이라고는 하지 않는다.
+say something about과 같이 써야 옳다:I want to say something / a few words / a little about my family.
+제가 저의 가족에 대해 말씀을 좀 드리고자 합니다.
+말을 듣는 상대방을 언급하지 않을 때에는 say를 절과 함께 쓸 수도 있다.She didn’t say what she intended to do.
+그녀는 자기가 뭘 하려는 것인지 말하지 않았다.
+tell은 보통 사람을 목적어로 취해서, 흔히 목적어를 두 개 취한다:Have you told him the news yet?
+그에게 그 소식을 이미 전했니?
+tell은 보통 ‘that’ 절과 함께 쓰인다:Anne told me (that) she was tired.
+앤이 피곤하다고 나에게 말했다.
+tell은 보통 누구에게 어떤 사실이나 정보를 알려 줄 때 쓰여 흔히 what, where 등과 함께 쓰인다:Can you tell me when the movie starts?
+그 영화가 언제 시작하는지 저에게 알려 줄 수 있으세요?
+(Can you give me some information about the school?
+그 학교에 대해 제게 정보를 좀 알려 주실 수 있으세요?
+과 비교해 보라. )
+tell은 또 누군가에게 지시를 할 때도 쓴다:The doctor told me to stay in bed.
+의사가 내게 누워 있으라고 했다.
+The doctor told me (that) I had to stay in bed.
+의사가 내게 누워 있어야 한다고 했다.
+또는 The doctor said (that) I had to stay in bed.
+의사가 내게 누워 있어야 한다고 했다.
+그러나 다음과 같이 말하진 않는다:The doctor said me to stay in bed.
+
+
+talk & speak
+
+이 단어들은 모두 뉴스, 정보, 생각, 감정을, 특히 대화를 통해, 다른 사람(들)과 공유함을 나타낸다.
+talk 말하다, 이야기하다, 수다를 떨다:We talked on the phone for over an hour.
+우리는 전화로 한 시간 넘게 수다를 떨었다.
+speak 이야기하다(말을 주고받다):I’ve spoken to the manager about it.
+제가 그것에 대해 매니저에게 이야기를 해 봤어요.
+‘Can I speak to Susan?’
+"수잔 좀 바꿔 주시겠어요?"
+‘Speaking.’
+"전데요[제가 수잔이에요]."
+
+talk or speak?◇speak는 talk보다 격식성 정도가 더 높은 대화를 시사할 수 있다.
+◇speak는 특정한 목표를 달성하기 위해 또는 누구에게 무엇을 하라고 하기 위해 말을 하는 것을 나타낸다.
+◇talk는 친교 행위로나 남의 조언을 구하기 위해 말을 하는 것을 나타낸다:
+Have you talked to your parents about the problems you’re having?
+네가 가진 문제들에 대해 부모님께 말씀을 드려 보았니?
+I’ve spoken to Ed about it and he’s promised not to let it happen again.
+내가 그것에 대해 에드에게 말했더니 그가 다시는 그런 일이 없도록 하겠다고 약속했다

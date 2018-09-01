@@ -1,0 +1,833 @@
+		word-1
+1	|	toxic	|	독의. 독이 있는
+2	|	deputy	|	대표자. 대리인
+3	|	commit	|	범하다. 위임하다
+4	|	pond	|	연못
+5	|	thaw	|	녹다
+6	|	fling	|	던지다
+7	|	hug	|	포옹
+8	|	lounge	|	어슬렁거리다. 휴게실
+9	|	baffle	|	당황. 좌절
+10	|	confusion	|	당황. 혼란. 혼동
+11	|	plough, plow	|	쟁기. 쟁기로 갈다
+12	|	hoe	|	괭이
+13	|	bark	|	짖다
+14	|	howl	|	올부짖다
+15	|	dusk, twilight  |    황혼
+16	|	dawn	|	새벽
+17	|	moor	|	황무지
+18	|	agile	|	민첩한
+19	|	agent	|	대리인
+20	|	bow	|	뱃머리
+21	|	poem	|	시
+22	|	cosmetic	|	화장품
+23	|	enemy	|	적
+24	|	aquarium	|	수족관
+25	|	tadpole	|	올챙이
+26	|	torpedo	|	어뢰
+27	|	kin	|	혈족. 친족
+28	|	brethren	|	형제
+29	|	indolent	|	게으른
+30	|	gash	|	깊은 상처
+31	|	eliminate	|	제거하다
+32	|	quaint	|	기묘한
+33	|	duel	|	결투
+34	|	drastic	|	격렬한
+35	|	belong	|	속하다. 소유하다
+36	|	scent	|	향수. 냄새
+37	|	sequence	|	연속
+38	|	cope	|	대항하다
+39	|	favorite	|	좋아하는
+40	|	garage	|	차고
+41	|	ascent	|	상승
+42	|	unique	|	유일한
+43	|	victim	|	희생. 희생자
+44	|	protest	|	항의
+45	|	borrow	|	빌리다
+46	|	courtesy	|	예의 바름. 공손
+47	|	perform	|	이행하다. 실행하다
+48	|	bleak	|	황량한
+49	|	phase	|	국면. 면
+50	|	manual	|	손의. 손으로 하는
+51	|	cheat	|	속이다. 사기
+52	|	local	|	지방의. 장소의
+53	|	bulletin	|	게시. 공고
+54	|	deal	|	다루다. 장사하다
+55	|	feast	|	잔치. 축제
+56	|	countermand	|	취소하다
+57	|	detach	|	분리하다
+58	|	attach	|	붙이다
+59	|	remove	|	제거하다
+60	|	repair	|	수리하다
+61	|	forget	|	잊다
+62	|	cool	|	시원한
+63	|	bribe	|	뇌물
+64	|	instant	|	즉시. 순간
+65	|	false	|	거짓의
+66	|	assign	|	할당하다
+67	|	afford	|	할 여유가 있다.
+68	|	tumble	|	뒹굴다
+69	|	chilly	|	차가운. 냉담한
+70	|	patience	|	참을성. 인내
+71	|	fraud	|	사기. 사기꾼
+72	|	jug	|	주전자. 항아리
+73	|	command	|	명령. 명령하다
+74	|	guess	|	추측. 추측하다
+75	|	remote	|	먼. 먼 곳의
+76	|	abrupt	|	갑작스런
+77	|	apology	|	변명. 사과
+78	|	hare	|	산토끼
+79	|	botany	|	식물학
+80	|	kindle	|	불을 붙이다
+81	|	hallow	|	신성하게하다
+82	|	check	|	대조하다. 대조
+83	|	severe	|	엄한
+84	|	devote	|	바치다. 헌신하다
+85	|	orphan	|	고아
+86	|	relish	|	맛
+87	|	hop	|	뛰다
+88	|	murder	|	살인
+89	|	nurse	|	간호원
+90	|	feature	|	용모
+91	|	pray	|	기도하다
+92	|	ware	|	제품
+93	|	wreath	|	화환
+94	|	emergency	|	비상사태
+95	|	fresh	|	신선한
+96	|	elegance	|	우아
+97	|	smart	|	재빠른
+98	|	crowd	|	군중
+99	|	obstruct	|	막다
+100	|	display	|	보이다
+
+
+
+101	|	accuse	|	고발하다
+102	|	sudden	|	갑직스러운
+103	|	tact	|	재주
+104	|	nervous	|	신경의
+105	|	dose	|	약을 먹다
+106	|	rend	|	찢다
+107	|	brisk	|	활발한
+108	|	serpent	|	(독있는)뱀
+109	|	snake	|	뱀
+110	|	ladder	|	사다리
+111	|	impudent	|	건방진
+112	|	mass	|	대중. 덩어리
+113	|	care	|	주의
+114	|	bewail	|	몹시 슬퍼하다
+115	|	sour	|	신
+116	|	dainty	|	맛 있는
+117	|	van	|	유개트럭
+118	|	apparent	|	명백한
+119	|	appear	|	나타나다
+120	|	strict	|	엄한
+121	|	effort	|	노력
+122	|	bang	|	꽝 닫다
+123	|	metropolis	|	대도시
+124	|	surge	|	큰 파도
+125	|	unfair	|	불공평한
+126	|	itch	|	가려움
+127	|	issue	|	논쟁점
+128	|	cucumber	|	오이
+129	|	tidy	|	단정한
+130	|	axle	|	차축
+131	|	helm	|	키
+132	|	ail	|	앓다. 괴롭히다
+133	|	delay	|	연기하다
+134	|	gang	|	갱단
+135	|	countenance	|	안색
+136	|	archaic	|	고대의
+137	|	incense	|	향기
+138	|	indulge	|	탐닉하다
+139	|	essential	|	필수적인
+140	|	majority	|	대다수
+141	|	lass	|	젊은 여자
+142	|	crude	|	가공하지 않은
+143	|	allude	|	암시하다
+144	|	kid	|	아이
+145	|	ambassador	|	대사
+146	|	yield	|	굴복하다. 양보하다
+147	|	era	|	시대. 연대
+148	|	bring	|	가져 오다
+149	|	mend	|	고치다. 수선하다
+150	|	fit	|	적당한
+151	|	dove	|	비둘기
+152	|	sincere	|	성실한
+153	|	emit	|	방출하다
+154	|	task	|	일. 임무
+155	|	client	|	고객
+156	|	charge	|	청구하다
+157	|	cell	|	세포
+158	|	pave	|	포장하다
+159	|	caution	|	주의
+160	|	logic	|	논리
+161	|	lodge	|	오두막집
+162	|	plant	|	식물
+163	|	prepare	|	준비하다
+164	|	urgent	|	긴급한
+165	|	sum	|	총액
+166	|	count	|	법정
+167	|	comb	|	빗
+168	|	mirror	|	거울
+169	|	consumer	|	소비자
+170	|	potent	|	유력한
+171	|	leaflet	|	작은 잎
+172	|	omit	|	빼다. 생략하다
+173	|	violate	|	위반하다
+174	|	trifle	|	사소한 일
+175	|	fat	|	지방
+176	|	bright	|	영리한
+177	|	scarce	|	부족한
+178	|	neck	|	목
+179	|	pearl	|	진주
+180	|	yoke	|	멍에
+181	|	cage	|	새장
+182	|	earn	|	벌다
+183	|	wag	|	(머리, 꼬리를) 흔들다
+184	|	lark	|	종달새
+185	|	seek	|	찾다. 구하다
+186	|	inform	|	알리다
+187	|	beseech	|	간청하다. 탄원하다
+188	|	witch	|	마녀. 무당
+189	|	tavern	|	선술집. 대포집
+190	|	thatch	|	초가지붕. 짚
+191	|	startle	|	깜짝 놀라게 하다
+192	|	seal	|	봉인하다.
+193	|	envelope	|	봉투
+194	|	bank	|	뚝. 은행
+195	|	ache	|	아프다. 아픔
+196	|	ardent	|	열심인
+197	|	wicked	|	나쁜
+198	|	navel	|	배꼽
+199	|	bestow	|	수여하다. 주다
+200	|	pulse	|	맥박
+
+
+
+201	|	bosom	|	가슴
+202	|	career	|	이력. 경력
+203	|	thin	|	희박한
+204	|	coal	|	석탄
+205	|	religious	|	종교의. 종교적인
+206	|	engage	|	약속하다. 종사하다
+207	|	beat	|	때리다. 치다
+208	|	bath	|	목욕
+209	|	rear	|	뒤. 배후. 기르다.
+210	|	laborious	|	힘드는. 고된
+211	|	bare	|	벌거벗은
+212	|	session	|	학기
+213	|	cheap	|	값싼
+214	|	resolute	|	굳게 결심한. 단호한
+215	|	curious	|	호기심 많은
+216	|	apricot	|	살구
+217	|	haste	|	서두름. 급함
+218	|	domicile	|	집. 주소
+219	|	cargo	|	화물
+220	|	bulb	|	전구. 구
+221	|	journal	|	신문. 잡지
+222	|	virgin	|	처녀
+223	|	spot	|	얼룩
+224	|	desire	|	원하다. 바라다
+225	|	proficient	|	능숙한. 숙달된
+226	|	conceal	|	숨기다.
+227	|	recover	|	회복하다. 복구하다.
+228	|	fortune	|	행운. 재산
+229	|	hail	|	우박
+230	|	molecular	|	분자의
+231	|	harm	|	손해
+232	|	follow	|	따라가다. 수행하다
+233	|	pious	|	신앙심의 경건한
+234	|	alter	|	바꾸다. 변경하다.
+235	|	acute	|	뾰족한. 날카로운
+236	|	travel	|	여행. 여행하다.
+237	|	alternate	|	교체하다.
+238	|	wholesale	|	도매. 도매의
+239	|	dangle	|	매달다. 매달리다.
+240	|	pessimize	|	비관하다.
+241	|	vagabond	|	방랑자
+242	|	jealousy	|	질투
+243	|	resemble	|	닮다
+244	|	chap	|	놈. 녀석
+245	|	shrivel	|	시들다. 오그라들다.
+246	|	ambition	|	야망
+247	|	vivid	|	생기 넘치는. 활기찬
+248	|	maniac	|	미친. 미치광이
+249	|	exhaust	|	고갈시키다.
+250	|	summit	|	꼭대기. 정상
+251	|	decency	|	예의 바름
+252	|	agitate	|	선동하다.
+253	|	Antarctic	|	남극의
+254	|	vessel	|	배. 그릇. 혈관
+255	|	addict	|	탐닉하다. 빠지다.
+256	|	assassin	|	암살자
+257	|	assist	|	돕다. 원조하다.
+258	|	quotation	|	인용
+259	|	gum	|	고무. 껌
+260	|	rotary	|	회전하는
+261	|	roast	|	굽다. 불에 쬐다.
+262	|	salary	|	봉급
+263	|	shark	|	상어
+264	|	surmise	|	추측하다. 추측
+265	|	throng	|	군중
+266	|	tedious	|	지루한
+267	|	tangible	|	만져서 알 수 있는
+268	|	gnat	|	모기
+269	|	lichen	|	이끼
+270	|	cactus	|	선인장
+271	|	cascade	|	폭포
+272	|	loin	|	허리
+273	|	dimple	|	보조개
+274	|	pimple	|	여드름
+275	|	garter	|	양말대님
+276	|	explode	|	폭발하다.
+277	|	dole	|	의영품. 사주
+278	|	hearth	|	난로
+279	|	drill	|	송곳
+280	|	genius	|	천재
+281	|	loosen	|	느슨하게하다. 풀다
+282	|	explore	|	탐험하다.
+283	|	persimmon	|	감. 감나무
+284	|	corridor	|	복도
+285	|	ingenious	|	독창적인
+286	|	forlorn	|	고독한
+287	|	entire	|	전부의
+288	|	abode	|	주소, 주거
+289	|	province	|	지방
+290	|	dull	|	우둔한. 둔한
+291	|	colt	|	망아지
+292	|	multitude	|	군중. 다수
+293	|	moss	|	이끼
+294	|	burst	|	폭발하다. 파열하다.
+295	|	alms	|	의연금, 보시
+296	|	pasture	|	목장
+297	|	leopard	|	표범
+298	|	giraffe	|	기린
+299	|	lip	|	입술
+300	|	flesh	|	육체. 살
+
+
+
+301	|	buoy	|	부표. 뜨다
+302	|	china	|	도자기
+303	|	venom	|	독액
+304	|	ethical	|	윤리의. 도덕의
+305	|	august	|	당당한. 위엄있는
+306	|	skull	|	두개골
+307	|	utter	|	말하다. 완전한
+308	|	carnal	|	육체의. 육욕적인
+309	|	remark	|	주목하다.
+310	|	competent	|	유능한
+311	|	blunt	|	둔한
+312	|	dissent	|	반대하다
+313	|	plug	|	마개
+314	|	beverage	|	음료
+315	|	resign	|	사임하다.
+316	|	sever	|	분리하다.
+317	|	chronic	|	만성의. 상습적인
+318	|	adjust	|	조정하다.
+319	|	voluntary	|	자발적인
+320	|	willful	|	고의의. 계획적인
+321	|	conceited	|	자만에 빠진. 우쭐한
+322	|	posture	|	자세. 태도
+323	|	urgent	|	재촉하다.
+324	|	gym	|	체육관
+325	|	frequent	|	빈번한. 자주 일어나는
+326	|	shrimp	|	작은 새우
+327	|	asset	|	자산. 재산
+328	|	royal	|	왕의
+329	|	loyal	|	충실한. 충성스러운
+330	|	throne	|	왕좌
+331	|	crown	|	왕관
+332	|	corona	|	관. 코로나
+333	|	realm	|	왕국. 영역
+334	|	disaster	|	재해. 재난
+335	|	catastrophe	|	큰 재해. 대파멸
+336	|	obvious	|	명백한
+337	|	clip	|	자르다. 클립
+338	|	speck	|	작은 반점. 얼룩
+339	|	gather	|	모으다.
+340	|	congregate	|	모으다. 집합시키다.
+341	|	imminent	|	절박한. 급박한
+342	|	fur	|	모피
+343	|	leather	|	가죽
+344	|	relic	|	유물. 유적
+345	|	slice	|	얇게 썰다
+346	|	orchard	|	과수원
+347	|	ballad	|	민요
+348	|	fruit	|	과일. 열매
+349	|	oyster	|	굴
+350	|	shield	|	방패. 막다
+351	|	population	|	인구. 주민
+352	|	ore	|	광석
+353	|	jail	|	교도소. 감옥
+354	|	stomach	|	배. 복부
+355	|	suffer	|	견디다. 참다. 괴로워하다.
+356	|	belly	|	배꼽
+357	|	hedge	|	장벽
+358	|	quack	|	꽥꽥. 돌팔이 의사
+359	|	jury	|	배심원
+360	|	gallows	|	교수대
+361	|	budget	|	예산
+362	|	collect	|	모으다
+363	|	fungus	|	버섯
+364	|	baggage	|	수하물
+365	|	chop	|	자르다. 절단
+366	|	purge	|	추방하다.
+367	|	sovereign	|	군주. 주권자
+368	|	agony	|	번민. 고통
+369	|	pet	|	애완동물
+370	|	usher	|	안내인. 안내하다.
+371	|	harvest	|	수확하다. 수확
+372	|	chimney	|	굴뚝
+373	|	version	|	번역. 버젼
+374	|	fume	|	연기.
+375	|	swallow	|	삼키다.
+376	|	prosper	|	번창하다.
+377	|	poise	|	균형 잡히게 하다.
+378	|	yearn	|	동경하다. 그리워하다.
+379	|	bail	|	보석. 보석금. 보석하다.
+380	|	grocer	|	식료품 상인
+381	|	figure	|	그림. 모양
+382	|	chuck	|	그만두다. 포기하다.
+383	|	quit	|	그만두다. 포기하다.
+384	|	theater	|	극장. 연극
+385	|	bitter	|	쓴. 괴로운
+386	|	acetic	|	신. 식초의
+387	|	muscle	|	근육
+388	|	forgo	|	보류하다.
+389	|	gulp	|	삼켜 버리다.
+390	|	punctual	|	정확한
+391	|	germ	|	세균. 병균
+392	|	thrive	|	번창하다. 번영하다.
+393	|	cease	|	그만두다.
+394	|	pungent	|	매운
+395	|	chisel	|	끌. 끌로 파다.
+396	|	heir	|	상속인. 상속하다.
+397	|	derive	|	끌어내다. 유래하다.
+398	|	exhibit	|	보이다. 전시하다.
+399	|	adjacent	|	인접한. 이웃한.
+400	|	nourish	|	자양분을 주다. 기르다.
+
+
+
+401	|	swell	|	부풀리다. 팽창
+402	|	monument	|	기념물. 기념비
+403	|	anchorage	|	정박. 닻내림
+404	|	approximately	|	대략. 거의
+405	|	venture	|	모험하다. 모험
+406	|	throat	|	목(구멍)
+407	|	gullet	|	목. 식도
+408	|	psychology	|	심리학. 심리
+409	|	bulge	|	부풀다. 불룩해지다.
+410	|	popular	|	대중의. 인기있는
+411	|	charcoal	|	목탄. 숯
+412	|	fig trees	|	무화과 나무
+413	|	stun	|	아찔하게 하다. 기절시키다.
+414	|	notorious	|	악명 높은
+415	|	cannon brute	|	대포
+416	|	repent	|	후회하다.
+417	|	allow	|	참작하다. 허가하다. 인정한다.
+418	|	humiliate	|	창피를 주다.
+419	|	shame	|	창피. 부끄럼
+420	|	burden	|	무거운 짐
+421	|	split	|	쪼개다. 찢다.
+422	|	rip	|	쪼개다. 찢다.(2)
+423	|	noxious	|	유해한
+424	|	contaminate	|	오염시키다.
+425	|	pollute	|	더럽히다. 오염시키다.
+426	|	formidable	|	무서운
+427	|	exile	|	추방. 망명. 추방하다
+428	|	disciple	|	제자. 문하생
+429	|	bulk	|	크기. 부피
+430	|	volcanic	|	화산의
+431	|	neighbor	|	이웃. 이웃사람.
+432	|	ferocious	|	잔인한. 사나운
+433	|	humble	|	겸손한
+434	|	plunge	|	뛰어들다.
+435	|	cherish	|	소중히 하다.
+436	|	affirm	|	확언한다. 긍정하다.
+437	|	accelerate	|	가속하다.
+438	|	expert	|	전문가. 숙달된
+439	|	chauffeur	|	운전수
+440	|	submit	|	복종하다.
+441	|	strategy	|	전략
+442	|	tease	|	괴롭히다.
+443	|	argue	|	논하다. 의논하다.
+444	|	speculate	|	사색하다. 숙고하다.
+445	|	arrange	|	정리하다. 정돈하다.
+446	|	arithmetic	|	산수
+447	|	thermos	|	보온병
+448	|	portrait	|	초상화
+449	|	hum	|	콧노래 부르다.
+450	|	convoy	|	호위. 호송. 호송하다.
+451	|	chuckle	|	낄낄 웃다.
+452	|	accommodate	|	숙박시키다.
+453	|	settle	|	정착하다. 해결하다.
+454	|	hoarse	|	목 쉰. 쉰 목소리의
+455	|	laureate	|	월계관을 쓴
+456	|	sane	|	재정신의 온건한
+457	|	adore	|	숭배하다.
+458	|	abduct	|	유괴하다.
+459	|	feudal	|	봉건제도의
+460	|	tyrant	|	폭군. 전제군주
+461	|	commerce	|	상업
+462	|	nursery	|	아이방. 육아실
+463	|	tread	|	짓밟다. 밟다.
+464	|	dedicate	|	바치다. 헌신하다.
+465	|	approach	|	가까이 가다. 접근하다.
+466	|	emotion	|	감동. 감정
+467	|	laundry	|	세탁물. 세탁
+468	|	compact	|	소형의 아담한.
+469	|	potential	|	가능성이 있는. 잠재적인
+470	|	facile	|	쉬운. 손쉬운
+471	|	colony	|	식민지
+472	|	convey	|	운반하다. 나르다.
+473	|	arbitrary	|	독단적인. 제멋대로의
+474	|	leak	|	새다. (물이) 샘
+475	|	mighty	|	강력한
+476	|	search	|	수색하다. 찾다.
+477	|	access	|	접근
+478	|	document	|	서류. 문서
+479	|	obscure	|	애매한. 모호한
+480	|	latent	|	잠재적인. 숨어 있는
+481	|	bonfire	|	모닥불
+482	|	float	|	뜨다.
+483	|	meddle	|	간섭하다.
+484	|	shave	|	면도. 면도하다.
+485	|	muse	|	명상하다.
+486	|	tickle	|	간지럼. 간지르다.
+487	|	cruel	|	잔인한
+488	|	wheel	|	바퀴. 수레바퀴
+489	|	immune	|	면제된. 면역된
+490	|	tutor	|	가정교사
+491	|	assent	|	동의. 동의하다.
+492	|	thirst	|	갈증. 갈망. 갈망하다.
+493	|	zoology	|	동물학
+494	|	wretch	|	가엾은 사람.
+495	|	dare	|	도전하다. 감히~하다.
+496	|	challenge	|	도전하다. 도전
+497	|	emerge	|	나오다. 나타나다.
+498	|	camel	|	낙타
+499	|	clue	|	단서. 실마리
+500	|	manure	|	비료. 거름
+
+
+
+501	|	desperate	|	절망적인
+502	|	fertile	|	비옥한. 기름진
+503	|	bugle	|	나팔. 나팔불다.
+504	|	bachelor	|	독신남자. 학사
+505	|	bureau	|	사무실
+506	|	sore	|	아픈. 쓰라린
+507	|	fund	|	자금. 기금
+508	|	debate	|	논쟁하다. 토론하다.
+509	|	dispute	|	논쟁. 논쟁하다.
+510	|	chivalry	|	기사도
+511	|	educate	|	교육하다.
+512	|	absence	|	결석. 부재
+513	|	numb	|	마비된. 저린
+514	|	hippo	|	하마
+515	|	participate	|	참가하다. 관여하다.
+516	|	pale	|	창백한. 핼쓱한
+517	|	drought	|	가뭄. 한발
+518	|	beggar	|	거지
+519	|	kennel	|	개 집
+520	|	employ	|	고용하다.
+521	|	associate	|	교제하다. 연합하다.
+522	|	chamber	|	방
+523	|	naked	|	벌거벗은. 꾸밈없는
+524	|	peach	|	복숭아
+525	|	pain	|	고통. 아품. 괴롭히다.
+526	|	illiterate	|	무식한. 문맹의
+527	|	bite	|	물어뜯다. 물다.
+528	|	brittle	|	부서지기 쉬운
+529	|	torment	|	고통. 괴롭히다.
+530	|	whale	|	고래
+531	|	contract	|	계약. 계약하다. 수축하다.
+532	|	reckon	|	계산하다.
+533	|	cultivate	|	경작하다. 갈다.
+534	|	farm	|	경작하다. 농장
+535	|	till	|	경작하다. 갈다.
+536	|	infancy	|	갓난아이. 유년기
+537	|	beckon	|	손짓(몸짓)으로 부르다.
+538	|	conclude	|	결정하다. 결론짓다.
+539	|	repulse	|	격퇴. 격퇴하다.
+540	|	stimulate	|	자극하다.
+541	|	pane	|	창유리
+542	|	lettuce	|	상치
+543	|	ceremony	|	의식. 의례
+544	|	register	|	기록하다. 등록하다.
+545	|	compare	|	비교하다. 비유하다.
+546	|	curl	|	곱슬머리
+547	|	toil	|	수고. 수고하다.
+548	|	arrest	|	체포. 체포하다.
+549	|	simulate	|	~인 체하다. 가장하다.
+550	|	amount	|	총액. 총액
+551	|	mud	|	진흙. 진창
+552	|	communicate	|	전달하다. 통신하다.
+553	|	butler	|	집사. 청지기
+554	|	offer	|	제공하다. 제안하다.
+555	|	hush	|	조용하게 하다. 침묵
+556	|	equipment	|	장비. 설비
+557	|	tranquil	|	조용한. 평온한
+558	|	license	|	허가증. 면허
+559	|	genuine	|	진짜의. 성실한
+560	|	illusion	|	환상. 환영
+561	|	attitude	|	태도
+562	|	confirm	|	확인하다. 확실히 하다.
+563	|	kernel	|	핵심
+564	|	saw	|	톱. 톱질하다.
+565	|	glance	|	힐끗보다. 일견
+566	|	heaven	|	하늘. 천국
+567	|	choir	|	합창단
+568	|	morsel	|	한 입
+569	|	balmy	|	향기로운. 향유의
+570	|	splendor	|	화려. 빛남
+571	|	chaos	|	혼돈. 무질서
+572	|	breath	|	호흡
+573	|	gill	|	아기미
+574	|	odd	|	홀수의. 기묘한
+575	|	mess	|	혼란
+576	|	recommend	|	추천하다.
+577	|	spill	|	흘리다. 엎지르다.
+578	|	bump	|	충돌. 충돌하다.
+579	|	bug	|	빈대. 곤충. 벌레
+580	|	invoke	|	빌다. 기원하다.
+581	|	candle	|	양초
+582	|	goose	|	기위
+583	|	harsh	|	사나운. 거친
+584	|	foam	|	거품 일다. 거품
+585	|	worry	|	걱정하다. 난처하게 하다.
+586	|	adult	|	어른. 성인. 어른의
+587	|	sturdy	|	건장한. 튼튼한
+588	|	myth	|	신화. 정설
+589	|	salmon	|	연어
+590	|	architect	|	건축가
+591	|	revenue	|	소득. 수입. 세입
+592	|	beak	|	부리
+593	|	scare	|	놀라게 하다. 겁나게 하다.
+594	|	soot	|	검댕
+595	|	estate	|	부동산. 토지. 재산
+596	|	assure	|	보증하다. 확실하게 하다.
+597	|	hollow	|	움푹한. 속이 빈
+598	|	bookkeeping	|	부기
+599	|	donate	|	기부. 기증
+600	|	candid	|	정직한. 솔직한
+
+
+
+601	|	nestle	|	기분좋게 눕다. 깃들다.
+602	|	cheery	|	기분이 좋은
+603	|	ominous	|	불길한. 나쁜 징조의
+604	|	execute	|	실행하다.
+605	|	cough	|	기침하다. 기침
+606	|	inn	|	여관. 여인숙
+607	|	laboratory	|	실험실
+608	|	fuel	|	연료
+609	|	tense	|	긴장한. 팽팽한. 시제
+610	|	analyze	|	분석하다.
+611	|	feather	|	깃. 깃털
+612	|	thermal	|	열의
+613	|	wreck	|	난파시키다. 난파
+614	|	calamitous	|	비참한. 재난의
+615	|	sharp	|	날카로운. 뾰족한
+616	|	wring	|	비틀다. 짜다.
+617	|	spa	|	온천
+618	|	peach	|	완두콩
+619	|	stumble	|	비틀거리다. 넘어지다.
+620	|	owl	|	올빼미
+621	|	abuse	|	남용하다. 욕하다.
+622	|	critic	|	비평가
+623	|	cookery	|	요리법
+624	|	wolf	|	늑대
+625	|	purchase	|	사다. 구입하다. 구입
+626	|	endeavor	|	애쓰다. 노력하다. 노력
+627	|	rust	|	녹. 녹슬다.
+628	|	bud	|	싹. 싹이 트다.
+629	|	folk	|	민속의
+630	|	vocal	|	소리의. 음성의
+631	|	event	|	사건. 결과
+632	|	island	|	섬
+633	|	suck	|	(액체를) 빨아들이다. 흡수하다.
+634	|	virtue	|	덕. 미덕
+635	|	reveal	|	폭로하다. 드러내다.
+636	|	smuggle	|	밀수하다.
+637	|	concern	|	관계하다. 관심을 갖다. 걱정하다.
+638	|	revolt	|	반항하다. 반란
+639	|	creed	|	교리. 교의. 주의
+640	|	pear	|	배
+641	|	rude	|	버릇 없는. 무례한.
+642	|	withdraw	|	물러나다. 움츠리다.
+643	|	loft	|	다락방
+644	|	seedling	|	묘목
+645	|	sow	|	씨를 뿌리다.
+646	|	million	|	100만
+647	|	billion	|	10억
+648	|	inhospitable	|	푸대접하는
+649	|	prairie	|	대초원
+650	|	soil	|	흙. 더럽히다.
+651	|	drown	|	익사하다.
+652	|	plague	|	전염병
+653	|	tongue	|	혀. 언어
+654	|	fellow	|	친구
+655	|	tradition	|	구전. 전설. 전통
+656	|	timid	|	겁 많은. 소심한
+657	|	gallant	|	씩씩한. 용감한
+658	|	sweep	|	청소하다. 청소
+659	|	excel	|	우수하다. 뛰어나다.
+660	|	filial	|	자식의. 효성스러운
+661	|	deserter	|	도망자
+662	|	feminine	|	여자의. 여성의
+663	|	wall	|	담. 벽
+664	|	jut	|	돌출하다.
+665	|	zebra	|	얼룩말
+666	|	potential	|	단지. 항아리
+667	|	urn	|	항아리. 단지
+668	|	seclude	|	격리하다. 운둔하다.
+669	|	naughty	|	장난 치는. 행실이 나쁜
+670	|	ugly	|	추한. 험악한
+671	|	reckon	|	계산하다. 세다.
+672	|	reverse	|	거꾸로 하다. 뒤집다. 역의
+673	|	adverse	|	역의. 반대의. 거꾸로의
+674	|	regard	|	주의하다. 주목하다.
+675	|	demeanor	|	행실. 태도
+676	|	rabbit	|	집토끼.
+677	|	future	|	미래. 장래
+678	|	museum	|	박물관
+679	|	research	|	조사하다. 연구하다.
+680	|	frog	|	개구리
+681	|	kneel	|	굴복하다. 무릎을 끓다.
+682	|	edge	|	가장자리. 날
+683	|	beer	|	맥주
+684	|	widow	|	과부
+685	|	terrible	|	무서운
+686	|	wasp	|	장수말벌
+687	|	hornet	|	말벌
+688	|	elephant	|	코끼리
+689	|	wall	|	담. 벽
+690	|	sergeant	|	상사
+691	|	soldier	|	곤인
+692	|	thorn	|	(식물의) 가시
+693	|	several	|	몇 개의. 몇몇의
+694	|	want	|	원하다. 부족하다.
+695	|	poll	|	투표. 투표하다
+696	|	vote	|	투표하다. 투표
+697	|	lie	|	거짓말
+698	|	wanton	|	제멋대로의
+699	|	hate	|	증오하다. 싫어하다.
+700	|	count	|	중요하다. 세다. 계산.
+
+
+
+701	|	convenient	|	편리한
+702	|	barely	|	간신히. 겨우
+703	|	operate	|	작동하다. 수술하다
+704	|	twin	|	쌍동이
+705	|	tear	|	눈물
+706	|	bear	|	낳다. 참다.
+707	|	oval	|	타원형의
+708	|	stare	|	응시하다.
+709	|	gaze	|	응시하다(2)
+710	|	top	|	꼭대기
+711	|	break	|	부서지다. 깨어지다
+712	|	costume	|	복장
+713	|	conspire	|	음모를 꾸미다. 공모하다
+714	|	locate	|	설치하다. ~의 위치를 알아내다.
+715	|	parrot	|	앵무새
+716	|	judge	|	판단하다. 심판
+717	|	breeze	|	산들바람. 미풍
+718	|	bustle	|	크게 소동하다. 큰소동
+719	|	academy	|	학원. 학교
+720	|	function	|	기능. 직무
+721	|	sojourn	|	머무름. 머무르다.
+722	|	worm	|	벌레
+723	|	demand	|	요구. 요구하다.
+724	|	wipe	|	닦다.
+725	|	eye	|	눈
+726	|	brow	|	이마
+727	|	boil	|	끓다.
+728	|	grace	|	우아. 은총
+729	|	beg	|	빌다. 간청하다.
+730	|	mention	|	언급. 언급하다.
+731	|	struggle	|	노력하다. 분투하다.
+732	|	cunning	|	교묘한. 교활한.
+733	|	negotiate	|	협상하다. 교섭하다.
+734	|	arrow	|	화살
+735	|	honor	|	명예
+736	|	glory	|	영광
+737	|	bundle	|	묶음. 묶다.
+738	|	sweat	|	땀. 땀을 흘리다.
+739	|	mingle	|	혼합하다. 섞다.
+740	|	endow	|	기부하다. 주다.
+741	|	ill	|	병든. 나쁜
+742	|	deserve	|	~할 가치가 있다.
+743	|	dwell	|	살다. 거주하다.
+744	|	adopt	|	채택하다. 양자로 삼다.
+745	|	Jew	|	유태인. 히브리인
+746	|	dew	|	이슬. (눈물)방울
+747	|	load	|	짐. 짐을 싣다.
+748	|	lord	|	주인. 군주
+749	|	weep	|	울다.
+750	|	sob	|	흐느껴 울다
+751	|	lock	|	자물쇠
+752	|	ensure	|	보증하다. 확실하게 하다.
+753	|	ensure	|	계속하게 일어나다.
+754	|	knob	|	손잡이. 혹
+755	|	robust	|	강한. 튼튼한
+756	|	robber	|	강도. 도둑
+757	|	zone	|	지대. 지역
+758	|	frigid	|	추운. 냉담한
+759	|	tablet	|	명패, 정제(약)
+760	|	dairy	|	우유점. 낙농장
+761	|	berth	|	침대
+762	|	bound	|	경계(선). 경계를 긋다.
+763	|	contact	|	접촉. 접촉하다.
+764	|	park	|	공원. 주차하다.
+765	|	duck	|	오리
+766	|	bowl	|	사발. 공기
+767	|	strenuous	|	분투적인
+768	|	fabricate	|	꾸며내다. 날조하다.
+769	|	million	|	맷돌. 재분기. 갈다.
+770	|	goblin	|	도깨비. 악마
+771	|	bone	|	뼈
+772	|	envy	|	부러움. 질투. 부러워하다.
+773	|	forgo	|	보류하다. 그만두다.
+774	|	hobby	|	취미
+775	|	halt	|	망설이다. 주저하다.
+776	|	massacre	|	대량학살. 대량학살하다.
+777	|	stale	|	진부한. (음식)상한
+778	|	candidate	|	후보자
+779	|	augment	|	늘다. 증대하다.
+780	|	audacity	|	뻔뻔스러움. 대담한
+781	|	innocent	|	순진한. 결백한. 무죄의
+782	|	manifest	|	분명한. 명백한. 명백하게하다.
+783	|	craft	|	교묘. 솜씨. 기술
+784	|	eminent	|	유명한. 뛰어난
+785	|	phenomenon	|	현상
+786	|	lunar	|	달의
+787	|	fart	|	방귀. 방귀 뀌다.
+788	|	excrement	|	대변. 똥
+789	|	urinate	|	오줌 누다. 소변을 보다
+790	|	emphasis	|	강조. 역설
+791	|	mule	|	고집장이. 노새
+792	|	chalk	|	분필
+793	|	coffin	|	관
+794	|	fracture	|	골절. 부러뜨리다.
+795	|	wander	|	헤매다. 방랑하다.
+796	|	lane	|	좁은 길
+797	|	path	|	길. 좁은 길
+798	|	measure	|	측정하다.
+799	|	textile	|	천. 직물
+800	|	texture	|	천. 직물(2)
+
+
+801	|	fabric	|	천. 직물(3)
+802	|	espy	|	찾아내다.
+803	|	horde	|	군중. 유목민의 무리
+804	|	grope	|	손으로 더듬다.
+805	|	porch	|	입구. 현관
+806	|	stalk	|	(식물)줄기. 활보하다.
+807	|	lineage	|	혈통. 계보
+808	|	delete	|	지우다. 삭제하다.
+809	|	capricious	|	변하기 쉬운. 변덕스러운
