@@ -33,7 +33,6 @@
         DiskFileItemFactory factory = new DiskFileItemFactory();
         factory.setSizeThreshold(100 * 1024 * 1024);   // 100 MB
         factory.setRepository(dir);
-
         ServletFileUpload upload = new ServletFileUpload(factory);
         upload.setSizeMax(15 * 1024 * 1024 * 1024);   // 15 GB
         List<FileItem> items = upload.parseRequest(request);
@@ -46,7 +45,7 @@
 
             if (fileItem.isFormField()) {
                 // Parameter
-                System.out.println("Parameter: " + fileItem.getFieldName() + "=" + fileItem.getString("euc-kr") + "<br>");
+                System.out.println(">>>>> Parameter: " + fileItem.getFieldName() + "=" + fileItem.getString("euc-kr"));
             } else {
                 if (fileItem.getSize() > 0) {
                     String fieldName = fileItem.getFieldName();
@@ -54,11 +53,19 @@
                     String contentType = fileItem.getContentType();
                     boolean isInMemory = fileItem.isInMemory();
                     long sizeInBytes = fileItem.getSize();
-                    System.out.println("FILE [fieldName] : " + fieldName + "<br/>");
-                    System.out.println("FILE [fileName] : " + fileName + "<br/>");
-                    System.out.println("FILE [contentType] : " + contentType + "<br/>");
-                    System.out.println("FILE [isInMemory] : " + isInMemory + "<br/>");
-                    System.out.println("FILE [sizeInBytes] : " + sizeInBytes + "<br/>");
+
+                    // check fileName
+                    int idx;
+                    if ((idx = fileName.lastIndexOf('\\')) < 0)
+                    	idx = fileName.lastIndexOf('/');
+                    if (idx >= 0)
+                    	fileName = fileName.substring(idx + 1);
+
+                    System.out.println(">>>>> FILE [fieldName] : " + fieldName);
+                    System.out.println(">>>>> FILE [fileName] : " + fileName);
+                    System.out.println(">>>>> FILE [contentType] : " + contentType);
+                    System.out.println(">>>>> FILE [isInMemory] : " + isInMemory);
+                    System.out.println(">>>>> FILE [sizeInBytes] : " + sizeInBytes);
 
                     try {
                         File uploadedFile = new File(realDir, fileName);
