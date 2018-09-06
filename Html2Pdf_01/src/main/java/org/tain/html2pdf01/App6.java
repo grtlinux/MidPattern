@@ -18,14 +18,14 @@ public class App6 {
 	private static boolean flag;
 	//private static String HTML_FILE;
 	private static String PDF_FILE;
-	private static String CSS_FILE;
+	//private static String CSS_FILE;
 	private static String FONT_FILE;
 
 	static {
 		flag = true;
 		//HTML_FILE = "C:/hanwha/Html2Pdf/imsi.html";
 		PDF_FILE = "C:/hanwha/Html2Pdf/imsi.pdf";
-		CSS_FILE = "C:/hanwha/Html2Pdf/pdf.css";
+		//CSS_FILE = "C:/hanwha/Html2Pdf/pdf.css";
 		//FONT_FILE = "C:/hanwha/Html2Pdf/Classic+Xing+kai+Font.ttf";  // 한글
 		//FONT_FILE = "C:/hanwha/Html2Pdf/YuryeoB.ttf";  // 한글
 		//FONT_FILE = "C:/hanwha/Html2Pdf/designhouseLight.ttf";  // 한글
