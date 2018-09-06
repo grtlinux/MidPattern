@@ -23,7 +23,7 @@ import com.itextpdf.text.DocumentException;
  * Hello world!
  *
  */
-public class App {
+public class App1 {
 
 	private static boolean flag;
 	private static String HTML_FILE;
