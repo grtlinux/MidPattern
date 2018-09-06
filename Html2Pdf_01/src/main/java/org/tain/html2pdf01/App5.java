@@ -38,12 +38,14 @@ public class App5 {
 		//HTML_FILE = "C:/hanwha/Html2Pdf/imsi.html";
 		PDF_FILE = "C:/hanwha/Html2Pdf/imsi.pdf";
 		CSS_FILE = "C:/hanwha/Html2Pdf/pdf.css";
-		FONT_FILE = "C:/hanwha/Html2Pdf/designhouseLight.ttf";  // 한글
-		FONT_FILE = "C:/hanwha/Html2Pdf/Hangyeoregyeolche.ttf";  // 한글
-		FONT_FILE = "C:/hanwha/Html2Pdf/GulimChe.ttf";  // 한글/한자
+		//FONT_FILE = "C:/hanwha/Html2Pdf/Classic+Xing+kai+Font.ttf";  // 한글
+		//FONT_FILE = "C:/hanwha/Html2Pdf/YuryeoB.ttf";  // 한글
+		//FONT_FILE = "C:/hanwha/Html2Pdf/designhouseLight.ttf";  // 한글
+		//FONT_FILE = "C:/hanwha/Html2Pdf/Hangyeoregyeolche.ttf";  // 한글
 		//FONT_FILE = "C:/hanwha/Html2Pdf/malgun.ttf";   // 한글
 		//FONT_FILE = "C:/hanwha/Html2Pdf/NanumGothic-Regular.ttf";  // 한글
 		//FONT_FILE = "C:/hanwha/Html2Pdf/또치_굴림체.ttf";   // 한글
+		FONT_FILE = "C:/hanwha/Html2Pdf/GulimChe.ttf";  // 한글/한자
 	}
 
 	public static String getClassInfo() {
