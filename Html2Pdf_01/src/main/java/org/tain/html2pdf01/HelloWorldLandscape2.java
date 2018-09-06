@@ -27,9 +27,7 @@ public class HelloWorldLandscape2 {
 		PdfWriter.getInstance(document, new FileOutputStream(RESULT));
 
 		document.open();
-
 		document.add(new Paragraph("Hello, world!!! landscape 2"));
-
 		document.close();
 	}
 }
