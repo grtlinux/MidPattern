@@ -1,6 +1,9 @@
 package org.tain.html2pdf01;
 
+import java.io.File;
+import java.io.FileOutputStream;
 import java.io.IOException;
+import java.io.OutputStream;
 
 import com.itextpdf.text.DocumentException;
 
@@ -35,6 +38,15 @@ public class App4 {
     }
 
 	private static void test01(String[] args) throws DocumentException, IOException {
+
+		String url = new File(HTML_FILE).toURI().toURL().toString();
+		System.out.println(">>>>> url: " + url);
+
+		OutputStream out = new FileOutputStream(PDF_FILE);
+
+		// Flying Saucer part
+		//ITextRenderer renderer  new ITextRenderer();
+
 
 	}
 }
