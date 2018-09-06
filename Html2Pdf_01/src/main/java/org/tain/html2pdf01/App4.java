@@ -5,6 +5,8 @@ import java.io.FileOutputStream;
 import java.io.IOException;
 import java.io.OutputStream;
 
+import org.xhtmlrenderer.pdf.ITextRenderer;
+
 import com.itextpdf.text.DocumentException;
 
 public class App4 {
@@ -45,8 +47,12 @@ public class App4 {
 		OutputStream out = new FileOutputStream(PDF_FILE);
 
 		// Flying Saucer part
-		//ITextRenderer renderer  new ITextRenderer();
+		ITextRenderer renderer = new ITextRenderer();
 
+		renderer.setDocument(url);
+		renderer.layout();
+		renderer.createPDF(out);
 
+		out.close();
 	}
 }
