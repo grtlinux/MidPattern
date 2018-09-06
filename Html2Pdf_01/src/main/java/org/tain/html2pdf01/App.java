@@ -124,6 +124,6 @@ public class App {
 	}
 
 	private static void test02(String[] args) throws IOException {
-
+		System.out.println( "Hello World!" );
 	}
 }
