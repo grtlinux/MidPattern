@@ -25,9 +25,13 @@ import com.itextpdf.layout.font.FontProvider;
 public class App {
 
 	private static boolean flag;
+	private static String HTML_FILE;
+	private static String PDF_FILE;
 
 	static {
 		flag = true;
+		HTML_FILE = "C:/hanwha/Html2Pdf/imsi.html";
+		PDF_FILE = "C:/hanwha/Html2Pdf/imsi.pdf";
 	}
 
 	public static String getClassInfo() {
@@ -54,7 +58,7 @@ public class App {
 	 */
 	private static void test01(String[] args) throws IOException {
 		String resources = "c:/hanwha/Html2Pdf";
-		FileOutputStream outputStream = new FileOutputStream("c:/hanwha/Html2Pdf/imsi.pdf");
+		FileOutputStream outputStream = new FileOutputStream(PDF_FILE);
 
 		WriterProperties writerProperties = new WriterProperties();
 		PdfWriter pdfWriter = new PdfWriter(outputStream, writerProperties);
@@ -85,7 +89,7 @@ public class App {
 
 		// Setup custom tagworker factory for better tagging of headers
 
-		Document document = Jsoup.parse(new File("c:/hanwha/Html2Pdf/imsi.html"), "UTF-8");
+		Document document = Jsoup.parse(new File(HTML_FILE), "UTF-8");
 
 		// remove tab of hidden input
 		Elements elements = document.getElementsByTag("input");
