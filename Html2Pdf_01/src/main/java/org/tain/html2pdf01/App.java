@@ -26,7 +26,6 @@ public class App {
 
 	public static void main( String[] args ) {
 		if (flag) System.out.println(">>>>> " + getClassInfo());
-
-        System.out.println( "Hello World!" );
-    }
+		System.out.println( "Hello World!" );
+	}
 }
