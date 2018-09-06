@@ -17,6 +17,7 @@ import com.itextpdf.kernel.pdf.PdfViewerPreferences;
 import com.itextpdf.kernel.pdf.PdfWriter;
 import com.itextpdf.kernel.pdf.WriterProperties;
 import com.itextpdf.layout.font.FontProvider;
+import com.itextpdf.text.DocumentException;
 
 /**
  * Hello world!
@@ -46,17 +47,16 @@ public class App {
 		return sb.toString();
 	}
 
-	public static void main( String[] args ) throws IOException {
+	public static void main( String[] args ) throws DocumentException, IOException {
 		if (flag) System.out.println(">>>>> " + getClassInfo());
 
 		if (flag) test01(args);
-		if (!flag) test02(args);
     }
 
 	/*
 	 * HTML to PDF
 	 */
-	private static void test01(String[] args) throws IOException {
+	private static void test01(String[] args) throws DocumentException, IOException {
 		String resources = "c:/hanwha/Html2Pdf";
 		FileOutputStream outputStream = new FileOutputStream(PDF_FILE);
 
@@ -125,9 +125,5 @@ public class App {
 
 		HtmlConverter.convertToPdf(document.toString(), pdfDoc, props);
 		pdfDoc.close();
-	}
-
-	private static void test02(String[] args) throws IOException {
-		System.out.println( "Hello World!" );
 	}
 }

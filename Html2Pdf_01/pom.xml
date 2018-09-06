@@ -41,6 +41,12 @@
       <version>5.5.4</version>
     </dependency>
 
+    <dependency>
+      <groupId>com.itextpdf.tool</groupId>
+      <artifactId>xmlworker</artifactId>
+      <version>5.5.0</version>
+    </dependency>
+
 
   </dependencies>
 </project>
