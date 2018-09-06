@@ -10,10 +10,12 @@ import com.itextpdf.text.pdf.PdfWriter;
 
 public class HelloWorld {
 
+	private static final boolean flag = true;
+
 	private static final String RESULT = "C:/hello.pdf";
 
 	public static void main(String[] args) throws DocumentException, IOException {
-		new HelloWorld().createPdf(RESULT);
+		if (flag) new HelloWorld().createPdf(RESULT);
 	}
 
 	private void createPdf(String fileName) throws DocumentException, IOException {
