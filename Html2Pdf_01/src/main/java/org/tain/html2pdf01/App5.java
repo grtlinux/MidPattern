@@ -22,6 +22,7 @@ import com.itextpdf.tool.xml.parser.XMLParser;
 import com.itextpdf.tool.xml.pipeline.css.CSSResolver;
 import com.itextpdf.tool.xml.pipeline.css.CssResolverPipeline;
 import com.itextpdf.tool.xml.pipeline.end.PdfWriterPipeline;
+import com.itextpdf.tool.xml.pipeline.html.AbstractImageProvider;
 import com.itextpdf.tool.xml.pipeline.html.HtmlPipeline;
 import com.itextpdf.tool.xml.pipeline.html.HtmlPipelineContext;
 
@@ -29,12 +30,14 @@ public class App5 {
 
 	private static boolean flag;
 	//private static String HTML_FILE;
+	private static String IMG_PATH;
 	private static String PDF_FILE;
 	private static String CSS_FILE;
 	private static String FONT_FILE;
 
 	static {
 		flag = true;
+		IMG_PATH = "C:/hanwha/Html2Pdf";
 		//HTML_FILE = "C:/hanwha/Html2Pdf/imsi.html";
 		PDF_FILE = "C:/hanwha/Html2Pdf/imsi.pdf";
 		CSS_FILE = "C:/hanwha/Html2Pdf/pdf.css";
@@ -91,6 +94,11 @@ public class App5 {
 		// Html Context
 		HtmlPipelineContext htmlContext = new HtmlPipelineContext(cssAppliers);
 		htmlContext.setTagFactory(Tags.getHtmlTagProcessorFactory());
+		htmlContext.setImageProvider(new AbstractImageProvider() {
+			public String getImageRootPath() {
+				return IMG_PATH;
+			}
+		});
 
 		// Pipeline
 		PdfWriterPipeline pdf = new PdfWriterPipeline(document, writer);
