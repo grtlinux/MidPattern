@@ -38,16 +38,16 @@ class AppClient implements OmmConsumerClient {
     public static final int FRAGMENT =  32641;
     public static final int TOT_SIZE =  32480;
     public static final int GUID =      4271;
-    
+
     // store fragments for reassmbly
-    Hashtable<String,ArrayList<ByteBuffer>> fragBuilderHash = 
+    Hashtable<String,ArrayList<ByteBuffer>> fragBuilderHash =
             new Hashtable<String,ArrayList<ByteBuffer>>();
     // store total sizes
     Hashtable<String,Long> totalSizes = new Hashtable<String,Long>();
     private MRNFXMain _mn = null;
-    
+
     public AppClient() {}
-    
+
     public void setFXMain(MRNFXMain mn) {
         _mn = mn;
     }
@@ -71,7 +71,7 @@ class AppClient implements OmmConsumerClient {
         System.out.println("Item Name: " + (updateMsg.hasName() ? updateMsg.name() : "<not set>"));
         System.out.println("Service Name: " + (updateMsg.hasServiceName() ? updateMsg.serviceName() : "<not set>"));
         System.out.println("Closure: "+event.closure());
-        
+
         if (DataType.DataTypes.MAP == updateMsg.payload().dataType()) {
             decode(updateMsg.payload().map());
         } else if (DataType.DataTypes.FIELD_LIST == updateMsg.payload().dataType()) {
@@ -132,8 +132,8 @@ class AppClient implements OmmConsumerClient {
                                 if(null != closure)
                                     which = ((Integer)closure).intValue();
                                 _mn.updateTxtArea(which, jsonResponse.toString(spacesToIndentEachLevel));
-                             } 
-                        } 
+                             }
+                        }
                         catch (Exception e) {
                             System.err.println("Exception parsing json: " + e);
                             e.printStackTrace(System.err);
@@ -175,13 +175,13 @@ class AppClient implements OmmConsumerClient {
                              } else {
                              //                         mn.updateTxtArea(0,"Update");
                              }
-                             */                        } 
+                             */                        }
                         catch (Exception e) {
                             System.err.println("Exception parsing json: " + e);
                             e.printStackTrace(System.err);
                         }
                             }
-                                    
+
                         }
                     }
                 }
@@ -238,7 +238,7 @@ class AppClient implements OmmConsumerClient {
             }
         }
     }
-    
+
 }
 
 public class MRNConsumer implements Runnable{
@@ -250,23 +250,24 @@ public class MRNConsumer implements Runnable{
     public static String _ricsMRN[]
             = {"MRN_HDLN", "MRN_STORY", "MRN_TRSI", "MRN_TRNA"};
     AppClient _appClient = null;
-    
+
     public MRNConsumer(/*) {}
-    
+
     public void mrnInit(*/String[] args) {
         //  adslon01 14002 ERT_EDGE rmds
         if (args == null || args.length != 4) {
             System.out.println("Insufficient arguments - requires:");
             System.out.println("serverip port servicename username");
             System.out.println("e.g. 10.117.216.106 14002 ELEKTRON_DD testuser");
+            System.out.println("e.g. 239.234.234.200 51031 ELEKTRON_DD testuser");
             return;
         }
-        
+
         _ip = args[0];
         _port = args[1];
         _serviceName = args[2];
         _userName = args[3];
- 
+
         try {
             /*AppClient*/ _appClient = new AppClient();
             OmmConsumerConfig config = EmaFactory.createOmmConsumerConfig();
@@ -281,14 +282,14 @@ public class MRNConsumer implements Runnable{
             System.out.println(excp.getMessage());
         }
     }
-    
+
     public void setFXMain(MRNFXMain mn){
         _appClient.setFXMain(mn);
     }
     public void run() {
         while(true) {
             try {
-                Thread.sleep(100);           
+                Thread.sleep(100);
             } catch(InterruptedException ie){}
         }
     }
