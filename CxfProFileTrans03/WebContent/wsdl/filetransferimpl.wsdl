@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wsdl:definitions name="FileTransferImplService" targetNamespace="http://provider.filetransfer.cxf.tain.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:tns="http://provider.filetransfer.cxf.tain.org/" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/">
+  <wsdl:types>
+<xs:schema xmlns:tns="http://provider.filetransfer.cxf.tain.org/" xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="unqualified" targetNamespace="http://provider.filetransfer.cxf.tain.org/" version="1.0">
+
+  <xs:element name="download" type="tns:download"/>
+
+  <xs:element name="downloadResponse" type="tns:downloadResponse"/>
+
+  <xs:element name="upload" type="tns:upload"/>
+
+  <xs:element name="uploadResponse" type="tns:uploadResponse"/>
+
+  <xs:complexType name="upload">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="arg0" type="xs:string"/>
+      <xs:element minOccurs="0" name="arg1" type="xs:base64Binary"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="uploadResponse">
+    <xs:sequence/>
+  </xs:complexType>
+
+  <xs:complexType name="download">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="arg0" type="xs:string"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="downloadResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="return" type="xs:base64Binary"/>
+    </xs:sequence>
+  </xs:complexType>
+
+</xs:schema>
+  </wsdl:types>
+  <wsdl:message name="uploadResponse">
+    <wsdl:part name="parameters" element="tns:uploadResponse">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="upload">
+    <wsdl:part name="parameters" element="tns:upload">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="downloadResponse">
+    <wsdl:part name="parameters" element="tns:downloadResponse">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="download">
+    <wsdl:part name="parameters" element="tns:download">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:portType name="FileTransferImpl">
+    <wsdl:operation name="upload">
+      <wsdl:input name="upload" message="tns:upload">
+    </wsdl:input>
+      <wsdl:output name="uploadResponse" message="tns:uploadResponse">
+    </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="download">
+      <wsdl:input name="download" message="tns:download">
+    </wsdl:input>
+      <wsdl:output name="downloadResponse" message="tns:downloadResponse">
+    </wsdl:output>
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="FileTransferImplServiceSoapBinding" type="tns:FileTransferImpl">
+    <soap:binding style="document" transport="http://schemas.xmlsoap.org/soap/http"/>
+    <wsdl:operation name="upload">
+      <soap:operation soapAction="" style="document"/>
+      <wsdl:input name="upload">
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="uploadResponse">
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="download">
+      <soap:operation soapAction="" style="document"/>
+      <wsdl:input name="download">
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="downloadResponse">
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="FileTransferImplService">
+    <wsdl:port name="FileTransferImplPort" binding="tns:FileTransferImplServiceSoapBinding">
+      <soap:address location="http://localhost:9090/FileTransferImplPort"/>
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>
