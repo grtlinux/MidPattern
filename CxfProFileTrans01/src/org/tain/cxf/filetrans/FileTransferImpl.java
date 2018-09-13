@@ -33,6 +33,7 @@ public class FileTransferImpl implements FileTransfer {
 			fos = new FileOutputStream(filePath);
 			bos = new BufferedOutputStream(fos);
 			bos.write(bytes);
+			bos.flush();
 
 			if (flag) System.out.println(">>>>> Received file : " + filePath);
 		} catch (Exception e) {
