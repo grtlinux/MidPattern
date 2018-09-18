@@ -7,10 +7,10 @@ package com.thomsonreuters.ema.examples.mrn;
 
 import java.io.File;
 import java.net.URL;
+
 import javafx.application.Application;
 import javafx.application.Platform;
 import javafx.event.ActionEvent;
-import javafx.event.EventHandler;
 import javafx.geometry.HPos;
 import javafx.geometry.Insets;
 import javafx.geometry.Pos;
@@ -20,8 +20,6 @@ import javafx.scene.control.Label;
 import javafx.scene.control.TextArea;
 import javafx.scene.layout.ColumnConstraints;
 import javafx.scene.layout.GridPane;
-import javafx.scene.layout.StackPane;
-import javafx.scene.paint.Color;
 import javafx.stage.Stage;
 
 /**
@@ -29,16 +27,17 @@ import javafx.stage.Stage;
  * @author zoya.farberov
  */
 public class MRNFXMain extends Application {
-    
+
     private static int MAX_TEXTAREA_LEN = 125000;
   //  private Object gridpane;
     private TextArea txtAreas[];
     private Button stopButtons[];
     private boolean frozen[];
+
     private MRNConsumer _consumer = null;
     private static String[] _argsPassed;
     private Thread _consumerThread = null;
-    
+
     @Override
     public void start(Stage primaryStage) {
         _consumer = new MRNConsumer(_argsPassed);
@@ -57,7 +56,7 @@ public class MRNFXMain extends Application {
             columns[i] = new ColumnConstraints();
             columns[i].setPercentWidth(25);
         }
-        grid.getColumnConstraints().addAll(columns[0], columns[1], columns[2], columns[3]); 
+        grid.getColumnConstraints().addAll(columns[0], columns[1], columns[2], columns[3]);
 
         txtAreas = new TextArea[4];
         stopButtons = new Button[4];
@@ -77,7 +76,7 @@ public class MRNFXMain extends Application {
             grid.add(feedName, i, 1);
             grid.add(txtAreas[i], i, 3);
             grid.add(stopButtons[i], i, 5);
-            String noDataYetTxt = "No data yet for feed "+feedName.getText()+"\n";        
+            String noDataYetTxt = "No data yet for feed "+feedName.getText()+"\n";
             txtAreas[i].appendText(noDataYetTxt);
  //           txtAreas[i].getStyleClass().add("text-area");
         }
@@ -89,7 +88,7 @@ public class MRNFXMain extends Application {
             File file = new File(".\\css\\dark.css");
             URL url = file.toURI().toURL();
             scene.getStylesheets().add(url.toExternalForm());
-            primaryStage.setScene(scene);        
+            primaryStage.setScene(scene);
         } catch (Exception e) {
             System.err.println("Exception reading css: "+ e);
             e.printStackTrace(System.err);
@@ -101,7 +100,7 @@ public class MRNFXMain extends Application {
         _consumer.setFXMain(this);
         _consumerThread.start();  //      initCompleted = true;
     }
-    
+
     public void updateTxtArea(int i, String str) {
         Platform.runLater(new Runnable() {
             @Override
@@ -136,20 +135,26 @@ public class MRNFXMain extends Application {
     public void setConsumer(MRNConsumer consumer) {
         _consumer = consumer;
     }
-    
+
     public MRNConsumer getConsumer() {
         return _consumer;
     }
-    
+
     @Override
     public void stop() {
         System.exit(0);
     }
-    
+
     /**
      * @param args the command line arguments
      */
-    public static void main(String[] args) {
+    @SuppressWarnings("static-access")
+	public static void main(String[] args) {
+    	// KANG-20180917
+    	args = new String[] { "10.117.216.106", "14002", "ELEKTRON_DD", "testuser" };
+    	args = new String[] { "239.234.234.200", "51031", "ELEKTRON_DD", "testuser" };
+    	// args = new String[] { "0.0.0.0", "51031", "ELEKTRON_DD", "testuser" };
+
     //    MRNConsumer cons = new MRNConsumer();
     //     cons.mrnInit(mn, args);
         MRNFXMain myMain = new MRNFXMain();
@@ -158,5 +163,4 @@ public class MRNFXMain extends Application {
             _argsPassed[i] = args[i];
         myMain.launch(args);
     }
-    
 }

@@ -1,37 +1,37 @@
 package com.thomsonreuters.ema.examples.mrn;
 
+import java.io.ByteArrayInputStream;
+import java.io.ByteArrayOutputStream;
+import java.nio.ByteBuffer;
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.Hashtable;
+import java.util.Iterator;
+import java.util.zip.GZIPInputStream;
+
+import org.json.JSONObject;
+
 import com.thomsonreuters.ema.access.AckMsg;
-import com.thomsonreuters.ema.access.Data;
-import com.thomsonreuters.ema.access.GenericMsg;
-import com.thomsonreuters.ema.access.RefreshMsg;
-import com.thomsonreuters.ema.access.ReqMsg;
-import com.thomsonreuters.ema.access.StatusMsg;
-import com.thomsonreuters.ema.access.UpdateMsg;
 import com.thomsonreuters.ema.access.DataType;
 import com.thomsonreuters.ema.access.DataType.DataTypes;
 import com.thomsonreuters.ema.access.EmaFactory;
 import com.thomsonreuters.ema.access.EmaUtility;
 import com.thomsonreuters.ema.access.FieldEntry;
 import com.thomsonreuters.ema.access.FieldList;
+import com.thomsonreuters.ema.access.GenericMsg;
 import com.thomsonreuters.ema.access.Map;
 import com.thomsonreuters.ema.access.MapEntry;
+import com.thomsonreuters.ema.access.Msg;
 import com.thomsonreuters.ema.access.OmmConsumer;
 import com.thomsonreuters.ema.access.OmmConsumerClient;
 import com.thomsonreuters.ema.access.OmmConsumerConfig;
 import com.thomsonreuters.ema.access.OmmConsumerEvent;
 import com.thomsonreuters.ema.access.OmmException;
+import com.thomsonreuters.ema.access.RefreshMsg;
+import com.thomsonreuters.ema.access.ReqMsg;
+import com.thomsonreuters.ema.access.StatusMsg;
+import com.thomsonreuters.ema.access.UpdateMsg;
 import com.thomsonreuters.ema.rdm.EmaRdm;
-import org.json.JSONObject;
-import java.io.ByteArrayInputStream;
-import java.io.ByteArrayOutputStream;
-import java.util.Iterator;
-import java.util.zip.GZIPInputStream;
-import java.util.Hashtable;
-import java.util.ArrayList;
-import java.util.Arrays;
-
-import com.thomsonreuters.ema.access.Msg;
-import java.nio.ByteBuffer;
 
 class AppClient implements OmmConsumerClient {
 
@@ -40,8 +40,7 @@ class AppClient implements OmmConsumerClient {
     public static final int GUID =      4271;
 
     // store fragments for reassmbly
-    Hashtable<String,ArrayList<ByteBuffer>> fragBuilderHash =
-            new Hashtable<String,ArrayList<ByteBuffer>>();
+    Hashtable<String,ArrayList<ByteBuffer>> fragBuilderHash = new Hashtable<String,ArrayList<ByteBuffer>>();
     // store total sizes
     Hashtable<String,Long> totalSizes = new Hashtable<String,Long>();
     private MRNFXMain _mn = null;
@@ -102,7 +101,8 @@ class AppClient implements OmmConsumerClient {
     }
 
     void decode(FieldList fieldList, Object closure) {
-        boolean retVal;
+        @SuppressWarnings("unused")
+		boolean retVal;
         System.out.println("Decode fieldList:");
         Iterator<FieldEntry> iter = fieldList.iterator();
         FieldEntry fieldEntry;
@@ -243,17 +243,16 @@ class AppClient implements OmmConsumerClient {
 
 public class MRNConsumer implements Runnable{
 
-    protected static String _serviceName;
     protected static String _ip;
     protected static String _port;
+    protected static String _serviceName;
     protected static String _userName;
-    public static String _ricsMRN[]
-            = {"MRN_HDLN", "MRN_STORY", "MRN_TRSI", "MRN_TRNA"};
+    public static String _ricsMRN[] = {"MRN_HDLN", "MRN_STORY", "MRN_TRSI", "MRN_TRNA"};
     AppClient _appClient = null;
 
-    public MRNConsumer(/*) {}
-
-    public void mrnInit(*/String[] args) {
+    //public MRNConsumer() {}
+    //public void mrnInit(String[] args) {
+    public MRNConsumer(String[] args) {
         //  adslon01 14002 ERT_EDGE rmds
         if (args == null || args.length != 4) {
             System.out.println("Insufficient arguments - requires:");
@@ -274,8 +273,12 @@ public class MRNConsumer implements Runnable{
             OmmConsumer consumer = EmaFactory.createOmmConsumer(config.host(_ip + ":" + _port).username(_userName));
             ReqMsg reqMsg = EmaFactory.createReqMsg();
             for(int i = 0; i<_ricsMRN.length; i++) {
-                consumer.registerClient(reqMsg.domainType(EmaRdm.MMT_NEWS_TEXT_ANALYTICS).serviceName(
-                        _serviceName).name(_ricsMRN[i]), _appClient, (new Integer(i)));
+                consumer.registerClient(reqMsg
+                		.domainType(EmaRdm.MMT_NEWS_TEXT_ANALYTICS)
+                		.serviceName(_serviceName)
+                		.name(_ricsMRN[i])
+                		, _appClient
+                		, (new Integer(i)));
             }
     //        Thread.sleep(60000);			// API calls onRefreshMsg(), onUpdateMsg() and onStatusMsg()		} catch ( OmmException excp ) {
         } catch (OmmException excp) {
@@ -286,6 +289,7 @@ public class MRNConsumer implements Runnable{
     public void setFXMain(MRNFXMain mn){
         _appClient.setFXMain(mn);
     }
+
     public void run() {
         while(true) {
             try {
