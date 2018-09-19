@@ -153,7 +153,12 @@ public class MRNFXMain extends Application {
     	// KANG-20180917
     	args = new String[] { "10.117.216.106", "14002", "ELEKTRON_DD", "testuser" };
     	args = new String[] { "239.234.234.200", "51031", "ELEKTRON_DD", "testuser" };
-    	// args = new String[] { "0.0.0.0", "51031", "ELEKTRON_DD", "testuser" };
+    	args = new String[] { "159.220.246.3",   "8101", "hEDD", "TY6_03_RHB_KR02895" }; // S639103-002
+    	//args = new String[] { "159.220.246.3",  "14002", "hEDD", "S639103-001" }; // S639103-002
+    	//args = new String[] { "159.220.246.19",  "8101", "hEDD", "S639103-001" }; // S639103-002
+    	//args = new String[] { "159.220.246.19", "14002", "hEDD", "S639103-001" }; // S639103-002
+    	//args = new String[] { "159.220.246.3",   "8101", "hEDD", "S639103-002" }; // S639103-002
+    	//args = new String[] { "159.220.246.3",   "8101", "hEDD", "testuser" }; // S639103-002
 
     //    MRNConsumer cons = new MRNConsumer();
     //     cons.mrnInit(mn, args);
