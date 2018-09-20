@@ -21,7 +21,7 @@ import com.thomsonreuters.ema.access.UpdateMsg;
 import com.thomsonreuters.ema.examples.mrn.MRNFXMain;
 import com.thomsonreuters.ema.rdm.EmaRdm;
 
-class AppClient implements OmmConsumerClient {
+class AppClient01 implements OmmConsumerClient {
 
 	public static final int FRAGMENT = 32641;
 	public static final int TOT_SIZE = 32480;
@@ -33,7 +33,7 @@ class AppClient implements OmmConsumerClient {
 	Hashtable<String, Long> totalSizes = new Hashtable<String, Long>();
 	private MRNFXMain _mn = null;
 
-	public AppClient() {}
+	public AppClient01() {}
 
 	public void setFXMain(MRNFXMain mn) {
 		_mn = mn;
@@ -45,13 +45,13 @@ class AppClient implements OmmConsumerClient {
 		System.out.println("onRefreshMsg");
 		System.out.println("Iten Name: " + (refreshMsg.hasName() ? refreshMsg.name() : "<not set>"));
 		System.out.println("Service Name: " + (refreshMsg.hasServiceName() ? refreshMsg.serviceName() : "<not set>"));
-		
+
 		System.out.println("Item State: " + refreshMsg.state());
-		
+
 		if (DataType.DataTypes.MAP == refreshMsg.payload().dataType()) {
 			decode(refreshMsg.payload().map());
 		}
-		
+
 		System.out.println();
 	}
 
@@ -98,16 +98,16 @@ class AppClient implements OmmConsumerClient {
 	}
 }
 
-public class MRNConsumer implements Runnable {
+public class MRNConsumer01 implements Runnable {
 
 	protected static String _ip;
 	protected static String _port;
 	protected static String _serviceName;
 	protected static String _userName;
 	public static String _ricsMRN[] = { "MRN_HDLN", "MRN_STORY", "MRN_TRSI", "MRN_TRNA" };
-	AppClient _appClient = null;
+	AppClient01 _appClient = null;
 
-	public MRNConsumer(String[] args) {
+	public MRNConsumer01(String[] args) {
 		if (args == null || args.length != 4) {
 			return;
 		}
@@ -118,7 +118,7 @@ public class MRNConsumer implements Runnable {
 		_userName = args[3];
 
 		try {
-			_appClient = new AppClient();
+			_appClient = new AppClient01();
 			OmmConsumerConfig config = EmaFactory.createOmmConsumerConfig();
 			OmmConsumer consumer = EmaFactory.createOmmConsumer(config.host(_ip + ":" + _port).username(_userName));
 			ReqMsg reqMsg = EmaFactory.createReqMsg();

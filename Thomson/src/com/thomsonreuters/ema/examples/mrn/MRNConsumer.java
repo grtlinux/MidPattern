@@ -100,6 +100,9 @@ class AppClient implements OmmConsumerClient {
     public void onAllMsg(Msg msg, OmmConsumerEvent consumerEvent) {
     }
 
+	
+	
+	
     void decode(FieldList fieldList, Object closure) {
         @SuppressWarnings("unused")
 		boolean retVal;
@@ -254,13 +257,13 @@ public class MRNConsumer implements Runnable{
     //public void mrnInit(String[] args) {
     public MRNConsumer(String[] args) {
         //  adslon01 14002 ERT_EDGE rmds
-        if (args == null || args.length != 4) {
-            System.out.println("Insufficient arguments - requires:");
-            System.out.println("serverip port servicename username");
-            System.out.println("e.g. 10.117.216.106 14002 ELEKTRON_DD testuser");
-            System.out.println("e.g. 239.234.234.200 51031 ELEKTRON_DD testuser");
-            return;
-        }
+		if (args == null || args.length != 4) {
+			System.out.println("Insufficient arguments - requires:");
+			System.out.println("serverip port servicename username");
+			System.out.println("e.g. 10.117.216.106 14002 ELEKTRON_DD testuser");
+			System.out.println("e.g. 239.234.234.200 51031 ELEKTRON_DD testuser");
+			return;
+		}
 
         _ip = args[0];
         _port = args[1];

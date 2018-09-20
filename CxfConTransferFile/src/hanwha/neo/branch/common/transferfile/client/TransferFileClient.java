@@ -41,7 +41,7 @@ public class TransferFileClient {
 			transferFile.setDataHandler(dataHandler);
 
 			String fileName = "b9419cc3ac10df7c0e4ebc97b2038f09.mht";
-			String filePath = "301/bbs/document/2018/9/18/16/b9419cc3ac10df7c0e4ebc97b2038f09.mht";
+			String filePath = "301/bbs/document/2018/9/20/14/b9419cc3ac10df7c0e4ebc97b2038f09.mht";
 			String fileSize = "1234567";  // String.valueOf(file.length());
 			transferFile.setFileName(fileName);
 			transferFile.setFilePath(filePath);
