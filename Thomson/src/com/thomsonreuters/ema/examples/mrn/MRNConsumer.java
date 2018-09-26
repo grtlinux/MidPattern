@@ -102,7 +102,37 @@ class AppClient implements OmmConsumerClient {
 
 	
 	
-	
+
+
+    void decode(Map map) {
+        System.out.println("Decode map:");
+        if (DataTypes.FIELD_LIST == map.summaryData().dataType()) {
+            System.out.println("Map Summary data:");
+            decode(map.summaryData().fieldList(),null);
+            System.out.println();
+        }
+
+        Iterator<MapEntry> iter = map.iterator();
+        MapEntry mapEntry;
+        while (iter.hasNext()) {
+            mapEntry = iter.next();
+
+            if (DataTypes.BUFFER == mapEntry.key().dataType()) {
+            	System.out.println("Action: " 
+					+ mapEntry.mapActionAsString() 
+					+ " key value: " 
+					+ EmaUtility.asHexString(mapEntry.key().buffer().buffer()));
+					//System.out.println("Action: " + mapEntry.mapActionAsString() + " key value: " + EmaUtility.asHexString(mapEntry.key().buffer().byteBuffer()));
+            }
+
+            if (DataTypes.FIELD_LIST == mapEntry.loadType()) {
+                System.out.println("Entry data:");
+                decode(mapEntry.fieldList(), null);
+                System.out.println();
+            }
+        }
+    }
+
     void decode(FieldList fieldList, Object closure) {
         @SuppressWarnings("unused")
 		boolean retVal;
@@ -168,21 +198,21 @@ class AppClient implements OmmConsumerClient {
                                 }
                                 strFlatFrag+= unzipPayload(fragOutputStream.toByteArray());
                                 System.out.println("=>FRAGMENT JSON STRING: " + strFlatFrag);
-                        try {
-                            JSONObject jsonResponse = new JSONObject(strFlatFrag);
-                            // pretty-print json response
-                            int spacesToIndentEachLevel = 2;
-                            System.out.println("FRAGMENT JSON PRETTY:\n" + jsonResponse.toString(spacesToIndentEachLevel));
-                            /*                      if(mn.isInitCompleted()) {
-                             mn.updateTxtArea(0, jsonResponse.toString(spacesToIndentEachLevel));
-                             } else {
-                             //                         mn.updateTxtArea(0,"Update");
-                             }
-                             */                        }
-                        catch (Exception e) {
-                            System.err.println("Exception parsing json: " + e);
-                            e.printStackTrace(System.err);
-                        }
+								try {
+									JSONObject jsonResponse = new JSONObject(strFlatFrag);
+									// pretty-print json response
+									int spacesToIndentEachLevel = 2;
+									System.out.println("FRAGMENT JSON PRETTY:\n" + jsonResponse.toString(spacesToIndentEachLevel));
+									/*                      if(mn.isInitCompleted()) {
+									 mn.updateTxtArea(0, jsonResponse.toString(spacesToIndentEachLevel));
+									 } else {
+									 //                         mn.updateTxtArea(0,"Update");
+									 }
+									 */                        }
+								catch (Exception e) {
+									System.err.println("Exception parsing json: " + e);
+									e.printStackTrace(System.err);
+								}
                             }
 
                         }
@@ -199,7 +229,6 @@ class AppClient implements OmmConsumerClient {
     }
 
     public String unzipPayload(byte[] bytes) {
-
         ByteArrayOutputStream bout = new ByteArrayOutputStream();
         ByteArrayInputStream bis = new ByteArrayInputStream(bytes);
         try {
@@ -213,35 +242,7 @@ class AppClient implements OmmConsumerClient {
             System.out.println("Parse News error:" + e.getMessage());
         }
         return bout.toString();
-
     }
-
-
-    void decode(Map map) {
-        System.out.println("Decode map:");
-        if (DataTypes.FIELD_LIST == map.summaryData().dataType()) {
-            System.out.println("Map Summary data:");
-            decode(map.summaryData().fieldList(),null);
-            System.out.println();
-        }
-
-        Iterator<MapEntry> iter = map.iterator();
-        MapEntry mapEntry;
-        while (iter.hasNext()) {
-            mapEntry = iter.next();
-
-            if (DataTypes.BUFFER == mapEntry.key().dataType()) {
-            	System.out.println("Action: " + mapEntry.mapActionAsString() + " key value: " + EmaUtility.asHexString(mapEntry.key().buffer().buffer()));//System.out.println("Action: " + mapEntry.mapActionAsString() + " key value: " + EmaUtility.asHexString(mapEntry.key().buffer().byteBuffer()));
-            }
-
-            if (DataTypes.FIELD_LIST == mapEntry.loadType()) {
-                System.out.println("Entry data:");
-                decode(mapEntry.fieldList(), null);
-                System.out.println();
-            }
-        }
-    }
-
 }
 
 public class MRNConsumer implements Runnable{

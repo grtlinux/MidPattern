@@ -1,9 +1,22 @@
+import java.io.ByteArrayInputStream;
+import java.io.ByteArrayOutputStream;
+import java.nio.ByteBuffer;
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.Hashtable;
 import java.util.Iterator;
+import java.util.List;
+import java.util.zip.GZIPInputStream;
+
+import org.json.JSONObject;
 
 import com.thomsonreuters.ema.access.AckMsg;
 import com.thomsonreuters.ema.access.DataType;
 import com.thomsonreuters.ema.access.DataType.DataTypes;
 import com.thomsonreuters.ema.access.EmaFactory;
+import com.thomsonreuters.ema.access.EmaUtility;
+import com.thomsonreuters.ema.access.FieldEntry;
+import com.thomsonreuters.ema.access.FieldList;
 import com.thomsonreuters.ema.access.GenericMsg;
 import com.thomsonreuters.ema.access.Map;
 import com.thomsonreuters.ema.access.MapEntry;
@@ -19,18 +32,91 @@ import com.thomsonreuters.ema.access.StatusMsg;
 import com.thomsonreuters.ema.access.UpdateMsg;
 import com.thomsonreuters.ema.rdm.EmaRdm;
 
+class UpdateBean {
+
+	private static final boolean flag = true;
+
+	private String dateTime;
+	private String msgType;  // UPDAGE/STATUS/REFRESH/GENERIC/ACK/ALL ..
+
+	private String name;
+	private String serviceName;
+	private String state;
+
+	private String dataType;  // DataType.DateTypes.*
+	private String loadType;
+
+	/*
+	if (flag) System.out.printf("FIELD_ENTRY: %d/%s/loadType(%d) %s%n"
+			, fieldEntry.fieldId()
+			, fieldEntry.name()
+			, fieldEntry.loadType()
+			, fieldEntry.load());
+	*/
+
+	private String guid;
+	private String activDate;
+	private String timactMs;
+	private String mrnSrc;
+	private String mrnType;
+	private String mrnVerMajor;
+	private String mrnVerMinor;
+	private String totSize;
+	private String[] fragNum;
+	private String[] size;
+	private String[] fragment;
+
+	private String jsonMsg;
+	private String prettyJsonMsg;
+}
+
+class StatusBean {
+
+}
+
+class RefreshBean {
+
+}
+
+
+@SuppressWarnings("unused")
 class AppClient02 implements OmmConsumerClient {
 
 	private static final boolean flag = true;
 
+	private static final int TIMACT_MS = 4148;
+	private static final int ACTIV_DATE = 17;
+	private static final int MRN_TYPE = 8593;
+	private static final int MRN_V_MAJ = 8506;
+	private static final int MRN_V_MIN = 11787;
+	private static final int TOT_SIZE = 32480;
+	private static final int FRAG_NUM = 32479;
+	private static final int GUID = 4271;
+	private static final int MRN_SRC = 12215;
+	private static final int FRAGMENT = 32641;
+
+	// store fragments for reassembly
+	Hashtable<String, List<ByteBuffer>> fragBuilderHash = new Hashtable<>();
+	// store total sizes
+	Hashtable<String, Long> totalSizes = new Hashtable<>();
+
 	public AppClient02() {}
+
+	@Override
+	public void onStatusMsg(StatusMsg statusMsg, OmmConsumerEvent event) {
+		if (flag) System.out.println("##### onStatusMsg");
+		if (flag) System.out.println(">>>>> Item Name: " + (statusMsg.hasName() ? statusMsg.name() : "<not set>"));
+		if (flag) System.out.println(">>>>> Service Name: " + (statusMsg.hasServiceName() ? statusMsg.serviceName() : "<not set>"));
+		if (flag) System.out.println(">>>>> Item State: " + (statusMsg.hasState() ? statusMsg.state() : "<not set>"));
+
+		if (flag) System.out.println();
+	}
 
 	@Override
 	public void onRefreshMsg(RefreshMsg refreshMsg, OmmConsumerEvent event) {
 		if (flag) System.out.println("##### onRefreshMsg");
 		if (flag) System.out.println(">>>>> Item name:" + (refreshMsg.hasName() ? refreshMsg.name() : "<not set>"));
 		if (flag) System.out.println(">>>>> Service Name: " + (refreshMsg.hasServiceName() ? refreshMsg.serviceName() : "<not set>"));
-
 		if (flag) System.out.println(">>>>> Item State: " + refreshMsg.state());
 
 		if (DataType.DataTypes.MAP == refreshMsg.payload().dataType()) {
@@ -45,20 +131,12 @@ class AppClient02 implements OmmConsumerClient {
 		if (flag) System.out.println("##### onUpdateMsg");
 		if (flag) System.out.println(">>>>> Item Name: " + (updateMsg.hasName() ? updateMsg.name() : "<not set>"));
 		if (flag) System.out.println(">>>>> Service Name: " + (updateMsg.hasServiceName() ? updateMsg.serviceName() : "<not set>"));
-
 		if (flag) System.out.println(">>>>> Closure: " + event.closure());
 
-		if (flag) System.out.println();
-	}
-
-	@Override
-	public void onStatusMsg(StatusMsg statusMsg, OmmConsumerEvent event) {
-		if (flag) System.out.println("##### onStatusMsg");
-		if (flag) System.out.println(">>>>> Item Name: " + (statusMsg.hasName() ? statusMsg.name() : "<not set>"));
-		if (flag) System.out.println(">>>>> Service Name: " + (statusMsg.hasServiceName() ? statusMsg.serviceName() : "<not set>"));
-
-		if (statusMsg.hasState()) {
-			if (flag) System.out.println(">>>>> Item State: " + statusMsg.state());
+		if (updateMsg.payload().dataType() == DataType.DataTypes.MAP) {
+			decode(updateMsg.payload().map());
+		} else if (updateMsg.payload().dataType() == DataType.DataTypes.FIELD_LIST) {
+			decode(updateMsg.payload().fieldList(), event.closure());
 		}
 
 		if (flag) System.out.println();
@@ -83,7 +161,7 @@ class AppClient02 implements OmmConsumerClient {
 
 	private void decode(Map map) {
 		if (flag) System.out.println(">>>>> Decode map:");
-		if (DataTypes.FIELD_LIST == map.summaryData().dataType()) {
+		if (map.summaryData().dataType() == DataTypes.FIELD_LIST) {
 			if (flag) System.out.println("Map Summary data:");
 			decode(map.summaryData().fieldList(), null);
 			if (flag) System.out.println();
@@ -91,7 +169,150 @@ class AppClient02 implements OmmConsumerClient {
 
 		Iterator<MapEntry> iter = map.iterator();
 		MapEntry mapEntry;
+		while (iter.hasNext()) {
+			mapEntry = iter.next();
 
+			if (mapEntry.key().dataType() == DataTypes.BUFFER) {
+				System.out.println("Action: "
+						+ mapEntry.mapActionAsString()
+						+ " key value: "
+						+ EmaUtility.asHexString(mapEntry.key().buffer().buffer()));
+			}
+
+			if (mapEntry.loadType() == DataTypes.FIELD_LIST) {
+				System.out.println("Entry data:");
+				decode(mapEntry.fieldList(), null);
+				System.out.println();
+			}
+		}
+	}
+
+	private void decode(FieldList fieldList, Object closure) {
+		if (flag) System.out.println("Decode fieldList: cnt = " + fieldList.size());
+
+		Iterator<FieldEntry> iter = fieldList.iterator();
+		FieldEntry fieldEntry;
+		long totalSize = 0;
+		long size = 0;
+		String guid = "";
+
+		while (iter.hasNext()) {
+			fieldEntry = iter.next();
+
+			if (flag) System.out.printf("FIELD_ENTRY: %d/%s/loadType(%d) %s%n"
+					, fieldEntry.fieldId()
+					, fieldEntry.name()
+					, fieldEntry.loadType()
+					, fieldEntry.load());
+
+			if (fieldEntry.fieldId() == TOT_SIZE) {
+				totalSize = fieldEntry.uintValue();
+				size = 0;
+			}
+
+			if (fieldEntry.fieldId() == FRAGMENT) {
+				System.out.println("=>FRAGMENT JSON zipped SIZE: " + fieldEntry.buffer().buffer().limit());
+				size += (long) fieldEntry.buffer().buffer().limit();
+			}
+
+			if (size > 0 && size == totalSize) {
+				size = 0;
+				totalSize = 0;
+				System.out.println("###############################################");
+			}
+
+			if (flag) continue;
+
+			if (fieldEntry.fieldId() == TOT_SIZE) {
+				totalSize = fieldEntry.uintValue();
+			} else if (fieldEntry.fieldId() == GUID) {
+				guid = fieldEntry.rmtes().toString();
+				if (totalSize != 0) {
+					totalSizes.put(guid, new Long(totalSize));
+				}
+			} else if (fieldEntry.loadType() == DataTypes.BUFFER) {
+				if (fieldEntry.fieldId() == FRAGMENT) {
+					System.out.println("=>FRAGMENT JSON zipped SIZE: " + fieldEntry.buffer().buffer().limit());
+
+					if (totalSize == 0)  // not a first segment
+						totalSize = totalSizes.get(guid).longValue();
+
+					if (fieldEntry.buffer().buffer().limit() == totalSize) {
+						// there is only one segment, we are ready
+						// unzip using gzip
+						String strFlatFlag = unzipPayload(Arrays.copyOf(fieldEntry.buffer().buffer().array(), fieldEntry.buffer().buffer().limit()));
+						System.out.println("=>FRAGMENT JSON STRING: " + strFlatFlag);
+						try {
+							JSONObject jsonResponse = new JSONObject(strFlatFlag);
+							// pretty-print json response
+							int spacesToIndentEachLevel = 2;
+							System.out.println("FRAGMENT JSON PRETTY:\n" + jsonResponse.toString(spacesToIndentEachLevel));
+						} catch (Exception e) {
+							e.printStackTrace();
+						}
+					} else {
+						List<ByteBuffer> alFrags;
+						if (!fragBuilderHash.containsKey(guid)) {
+							// other article
+							alFrags = new ArrayList<>();
+							alFrags.add(fieldEntry.buffer().buffer());
+							fragBuilderHash.put(guid, alFrags);
+						} else {
+							// the same article
+							alFrags = fragBuilderHash.get(guid);
+							alFrags.add(fieldEntry.buffer().buffer());
+							int sizeNow = 0;
+							for (int i=0; i < alFrags.size(); i++) {
+								sizeNow += alFrags.get(i).limit();
+							}
+
+							if (sizeNow < totalSize) {
+								fragBuilderHash.put(guid, alFrags);
+							} else {
+								// we are ready
+								ByteArrayOutputStream fragOutputStream = new ByteArrayOutputStream();
+								String strFlatFrag = "";
+
+								for (int i=0; i < alFrags.size(); i++) {
+									try {
+										fragOutputStream.write(Arrays.copyOf(alFrags.get(i).array(), alFrags.get(i).limit()));
+									} catch (Exception e) {}
+								}
+								strFlatFrag += unzipPayload(fragOutputStream.toByteArray());
+
+								if (flag) System.out.println("=>FRAGMENT JSON STRING: " + strFlatFrag);
+
+								try {
+									JSONObject jsonResponse = new JSONObject(strFlatFrag);
+									// pretty-print json response
+									int spacesToIndentEachLevel = 2;
+									System.out.println("FRAGMENT JSON PRETTY:\n" + jsonResponse.toString(spacesToIndentEachLevel));
+								} catch (Exception e) {
+									e.printStackTrace();
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+
+	private String unzipPayload(byte[] bytes) {
+		ByteArrayOutputStream bos = new ByteArrayOutputStream();
+		ByteArrayInputStream bis = new ByteArrayInputStream(bytes);
+
+		try {
+			GZIPInputStream gis = new GZIPInputStream(bis);
+			byte[] buffer = new byte[bytes.length + 1];
+			int len = -1;
+			while ((len = gis.read(buffer, 0, bytes.length+1)) != -1) {
+				bos.write(buffer, 0, len);
+			}
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+		return bos.toString();
 	}
 }
 
