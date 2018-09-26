@@ -65,7 +65,6 @@ class Decode {
 	private static String unzipPayload(byte[] bytes) {
 		ByteArrayOutputStream bos = null;
 		ByteArrayInputStream bis = null;
-		String ret = null;
 
 		try {
 			bos = new ByteArrayOutputStream();
@@ -84,7 +83,7 @@ class Decode {
 			if (bis != null) try { bis.close(); } catch (Exception e) {}
 		}
 
-		return ret;
+		return bos.toString();
 	}
 }
 
@@ -133,7 +132,7 @@ class AppClient03 implements OmmConsumerClient {
 
 	@Override
 	public void onAckMsg(AckMsg ackMsg, OmmConsumerEvent event) {
-		if (flag) System.out.println("##### onAckMsg #####");
+		if (flag) System.out.println("##### onGenericMsg #####");
 	}
 
 	@Override

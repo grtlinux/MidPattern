@@ -144,7 +144,8 @@ class AppClient implements OmmConsumerClient {
         while (iter.hasNext()) {
             fieldEntry = iter.next();
             System.out.println("FIELD_ENTRY: " + fieldEntry.fieldId() + "/" + fieldEntry.name() + ": " + fieldEntry.load() + " loadType: " + fieldEntry.loadType());
-            if (fieldEntry.loadType() == DataTypes.BUFFER) {
+            
+			if (fieldEntry.loadType() == DataTypes.BUFFER) {
                 if (fieldEntry.fieldId() == FRAGMENT) {
                 	System.out.println("=>FRAGMENT JSON zipped SIZE: "+fieldEntry.buffer().buffer().limit());//System.out.println("=>FRAGMENT JSON zipped SIZE: "+fieldEntry.buffer().byteBuffer().array().length);
 
