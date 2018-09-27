@@ -53,9 +53,9 @@ class AppClient05 implements OmmConsumerClient {
 	private static final int FRAGMENT = 32641;
 
 	// store fragments for reassembly
-	private static Hashtable<String, List<ByteBuffer>> fragBuilderHash = new Hashtable<>();
+	private static Hashtable<String, List<ByteBuffer>> fragBuilderHash = new Hashtable<String, List<ByteBuffer>>();
 	// store total sizes
-	private static Hashtable<String, Long> totalSizes = new Hashtable<>();
+	private static Hashtable<String, Long> totalSizes = new Hashtable<String, Long>();
 
 	/////////////////////////////////////////////////////////////////////
 
@@ -204,7 +204,7 @@ class AppClient05 implements OmmConsumerClient {
 						List<ByteBuffer> alFrags = null;
 						if (!fragBuilderHash.containsKey(guid)) {
 							// no hash key
-							alFrags = new ArrayList<>();
+							alFrags = new ArrayList<ByteBuffer>();
 							alFrags.add(fieldEntry.buffer().buffer());
 							fragBuilderHash.put(guid, alFrags);
 						} else {

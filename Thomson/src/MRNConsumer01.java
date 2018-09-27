@@ -87,6 +87,7 @@ class AppClient01 implements OmmConsumerClient {
 
 	public String unzipPayload(byte[] bytes) {
 
+		return null;
 	}
 
 	void decode(FieldList fieldList, Object closure) {
