@@ -1,4 +1,4 @@
-package hanwha.test.sftp;
+package hanwha.neo.branch.common.transferfile.client;
 
 import java.util.Properties;
 

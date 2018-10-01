@@ -270,7 +270,7 @@ public final class WsDownloadUtil {
 
 		if (flag) {
 			// upload
-			String uploadFilePath = "/neo_data/301/bbs/document/2018/9/20/15/Consumer.pptx";
+			String uploadFilePath = "/neo_data/301/bbs/document/2018/10/1/12/Consumer.pptx";
 			String returnString = WsDownloadUtil.wsUpload(wsdl, uploadFilePath);
 			System.out.println(">>>>> " + returnString);
 		}
@@ -280,7 +280,7 @@ public final class WsDownloadUtil {
 		if (flag) {
 			// download
 			//String downloadFilePath = "/neo_data_eo/301/bbs/document/2018/9/20/15/Consumer.pptx";
-			String downloadFilePath = "301/bbs/document/2018/9/20/15/Consumer.pptx";
+			String downloadFilePath = "301/bbs/document/2018/10/1/12/Consumer.pptx";
 			WsDownloadUtil.wsDownload(wsdl, downloadFilePath);
 		}
     }
