@@ -7,7 +7,7 @@ public class CallHttpMain {
 
 	public static void main(String[] args) {
 
-		args = new String[] { "http://hanwha.eagleoffice.co.kr/neo/ws/common/transferFile?wsdl", "utf-8" };
+		//args = new String[] { "http://hanwha.eagleoffice.co.kr/neo/ws/common/transferFile?wsdl", "utf-8" };
 
 		if (args.length != 2) {
 			System.out.println("USAGE: java CallHttpMain [url] [charSet]");
