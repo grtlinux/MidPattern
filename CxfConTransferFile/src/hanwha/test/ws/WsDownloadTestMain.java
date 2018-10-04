@@ -22,6 +22,7 @@ public class WsDownloadTestMain {
 
 		String wsdl;
 		wsdl = "http://hanwha.eagleoffice.co.kr/neo/ws/common/transferFile?wsdl";
+		//wsdl = "http://172.16.223.140/neo/ws/common/transferFile?wsdl";
 
 		if (flag) {
 			// upload
