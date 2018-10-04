@@ -98,7 +98,7 @@ public final class WsDownloadUtil {
 	        	// if DB 의 경로 사용
 	        	_download_filePATH = baseDir + fileSeperator + _download_filePATH;
 
-	        	_download__return.setFilePath(_download_filePATH + "2");
+	        	_download__return.setFilePath(_download_filePATH);
 
 	        	WsDownloadUtil.saveAttach(_download__return);
 
@@ -203,6 +203,12 @@ public final class WsDownloadUtil {
 			if (bos != null) try { bos.close(); } catch (IOException e) { throw e; }
 		}
 	}
+
+    ///////////////////////////////////////////////////////////////////////////////////
+    ///////////////////////////////////////////////////////////////////////////////////
+    ///////////////////////////////////////////////////////////////////////////////////
+    ///////////////////////////////////////////////////////////////////////////////////
+    ///////////////////////////////////////////////////////////////////////////////////
 
 	public static void main(String args[]) throws java.lang.Exception {
 		String wsdl = null;
