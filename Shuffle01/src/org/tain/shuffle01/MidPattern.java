@@ -22,7 +22,8 @@ public class MidPattern {
 	static {
 		flag = true;
 		DEFAULT_WAIT_TIME = 5000;
-		DEFAULT_BASE_DIR = "C:/hanwha/workspace_eng01/Shuffle01/";
+		// DEFAULT_BASE_DIR = "C:/hanwha/workspace_eng01/Shuffle01/";
+		DEFAULT_BASE_DIR = "C:/hanwha/GIT/git/MidPattern/Shuffle01/";
 		DEFAULT_DATA_FILE = "03.MidPattern.txt";
 		DEFAULT_CNT_EXAM = 10;
 	}
