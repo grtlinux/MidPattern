@@ -351,3 +351,40 @@ Have you talked to your parents about the problems you’re having?
 네가 가진 문제들에 대해 부모님께 말씀을 드려 보았니?
 I’ve spoken to Ed about it and he’s promised not to let it happen again.
 내가 그것에 대해 에드에게 말했더니 그가 다시는 그런 일이 없도록 하겠다고 약속했다
+
+----------------------------------------------------
+[ HTML5_CSS3_JQuery references ]
+
+w3school - http://www.w3schools.com/
+HTML - http://www.w3schools.com/html/default.asp
+HTML Tag Reference - http://www.w3schools.com/tags/default.asp>
+CSS - http://www.w3schools.com/css/default.asp
+CSS Reference - http://www.w3schools.com/cssref/default.asp
+JavaScript - http://www.w3schools.com/js/default.asp
+JavaScript Reference - http://www.w3schools.com/jsref/default.asp
+SQL - http://www.w3schools.com/sql/default.asp
+jQuery - http://jquery.com/
+jQuery API - http://api.jquery.com/
+jQuery UI - http://jqueryui.com/
+HTML Validator(HTML 유효성 검사) - http://validator.w3.org/ (한국어 : http://validator.kldp.org)
+CSS Validator(CSS 유효성 검사) - http://jigsaw.w3.org/css-validator/
+Browser Sandbox(브라우저 테스트) - https://spoon.net/Browsers
+Chrome Frame Developer Guide(크로미움 프로젝트) - http://www.chromium.org/developers/how-tos/chrome-frame-getting-started
+Ultimate CSS Gradient Generator(CSS 그라디언트 생성기, RGB) - http://www.colorzilla.com/gradient-editor/
+Border-Image-Generator(border 이미지 생성기) - http://www.border-image.com/
+Random Text Generator(무작위 글 생성기) - http://johno.jsmf.net/knowhow/ngrams/index.php
+HTML Entity Code(예 : " " =  , & = & 등) - http://entitycode.com/
+Google Web Fonts(구글 웹 폰트) - https://www.google.com/fonts/
+APMSETUP (가상 웹 호스팅 프로그램) - http://www.apmsetup.com/ (MAMP - https://www.mamp.info/en/)
+Notepad++ - https://notepad-plus-plus.org/
+Wordpress - https://wordpress.org/
+XpressEngine - http://www.xpressengine.com/
+LESS(LESS : css의 함수 형태, SimpLESS : LESS Compiler) - http://lesscss.org/
+(SimpLESS(LESS Compiler) - http://wearekiss.com/simpless)
+Web Photoshop(웹 포토샵) - http://pixlr.com/editor/
+Web Coding(웹에서 코딩 테스트) - http://ideone.com/, http://codepad.org/
+Normalize.css(각 웹 브라우저마다 동일한 기본 문서 형태가 만들어질 수 있도록 스타일을 초기화) - http://necolas.github.io/normalize.css/
+Reset.css(모든 요소의 스타일을 같게 만드는 초기화) - http://meyerweb.com/eric/tools/css/reset/
+Modernizr.js(HTML5와 CSS3의 특성을 브라우저가 지원하는지의 여부를 알아내는 아주 작은 JavaScript 라이브러리) - http://www.modernizr.com
+
+
